@@ -1,101 +1,101 @@
-Question ID,Question,Question Type,Ground Truth,Generated Answer,MRR,NDCG,BERTScore F1,Response Time (s)
-Q001,What award did Margaret Osborne DuPont receive in 1999?,factual,The Delaware Sports Hall of Fame,,0.0,0.0,0.0,0.0
-Q002,What is the name of the drug that is being researched?,factual,Armesocarb,,0.0,0.0,0.0,0.0
-Q003,What was the highest honor given by the National Newspaper Publishers Association in 1971?,factual,NNPA Award,,0.0,0.0,0.0,0.0
-Q004,What is Ken Bruzenak's last name?,factual,Bruzenak,,0.0,0.0,0.0,0.0
-Q005,What was the name of the company that the ceiling panel collapse occurred on?,factual,Modern Continental Construction,,0.0,0.0,0.0,0.0
-Q006,What was the role of the Vice-president of the Bar Council in India?,factual,setting up of separate bench for Southern India,,0.0,0.0,0.0,0.0
-Q007,What is the year of the text that Thomas Dastin wrote?,factual,1949,,0.0,0.0,0.0,0.0
-Q008,What was Macmillan's successor?,factual,Alec Douglas-Home,,0.0,0.0,0.0,0.0
-Q009,What was the most important quarry in Europe?,factual,Tunstead Quarry,,0.0,0.0,0.0,0.0
-Q010,What did the 3rd Marine Regiment do to the Japanese?,factual,fired,,0.0,0.0,0.0,0.0
-Q011,What was the primary reason for the difficulties in the way of educating children properly?,factual,the constant coming and going,,0.0,0.0,0.0,0.0
-Q012,What city is Jericho located on?,factual,Manhattan,,0.0,0.0,0.0,0.0
-Q013,What is the key to the Service Initiative?,factual,a program encouraging hands-on service to children aimed towards a common goal,,0.0,0.0,0.0,0.0
-Q014,What is the use of outside air to cool indoor spaces?,factual,Ventilative cooling,,0.0,0.0,0.0,0.0
-Q015,Who was the first host of Stargate SG-1?,factual,Showtime,,0.0,0.0,0.0,0.0
-Q016,What was the title of Robyn's pop-up club series?,factual,Konichiwa Bitches goes Tutti Frutti,,0.0,0.0,0.0,0.0
-Q017,What event did Michael Trindade miss in the 2024 Summer Olympics?,factual,first round,,0.0,0.0,0.0,0.0
-Q018,"What was the goal objective of the event that was held in Washington, D.C.?",factual,35th anniversary of the creation of the Black Panther Party,,0.0,0.0,0.0,0.0
-Q019,How many dollars are spent per question in the draft question?,factual,45 euros,,0.0,0.0,0.0,0.0
-Q020,How many touchdowns did Marshall score?,factual,3,,0.0,0.0,0.0,0.0
-Q021,What was the name of the company that Hamad was vice-president of before making his foray into politics?,factual,Groupe Roche,,0.0,0.0,0.0,0.0
-Q022,What is the name of the engineering company he is Managing Director and Chief Executive Officer of?,factual,Dorman Long Engineering Limited,,0.0,0.0,0.0,0.0
-Q023,What is the name of the person that the GCSB spied on?,factual,Kim Dotcom,,0.0,0.0,0.0,0.0
-Q024,What is FOG?,factual,Something that obscures and confuses a situation or someone's thought processes,,0.0,0.0,0.0,0.0
-Q025,Who did Sutee play for in 2003?,factual,Home United,,0.0,0.0,0.0,0.0
-Q026,What two institutions existed in Jericho?,factual,Charity Society of Jericho and Westbury,,0.0,0.0,0.0,0.0
-Q027,Who was responsible for the formation of the population outside the capital?,factual,30 households,,0.0,0.0,0.0,0.0
-Q028,Where did Milstein study at Goethe-Institut in Tel Aviv and Düsseldorf?,factual,German language,,0.0,0.0,0.0,0.0
-Q029,What is the last known species to be extinction-related?,factual,Megacerops,,0.0,0.0,0.0,0.0
-Q030,What is the name of the band Stephen played for?,factual,Uncle John's Band,,0.0,0.0,0.0,0.0
-Q031,How many crew and a dog were rescued from the burning Taiwanese fishing vessel Hsin Chin Chanz?,factual,13,,0.0,0.0,0.0,0.0
-Q032,What year did Celebration High School first compete in the Florida High School Athletic Association?,factual,,,0.0,0.0,0.0,0.0
-Q033,Where did the Allensworths move to live?,factual,Los Angeles,,0.0,0.0,0.0,0.0
-Q034,What does Laurie use to help make a video of himself?,factual,a remote camera,,0.0,0.0,0.0,0.0
-Q035,Who is Sir Daniel?,factual,"a powerful, unscrupulous knight",,0.0,0.0,0.0,0.0
-Q036,What is the structure of RELA?,factual,"N-terminal REL-homology domain (RHD), and also a C-terminal transactivation domain (TAD)",,0.0,0.0,0.0,0.0
-Q037,Which school does not have direct transfer intake of pupils?,comparative,studio schools,,0.0,0.0,0.0,0.0
-Q038,What is the difference between gender equality and gender inequality?,comparative,gender equality,,0.0,0.0,0.0,0.0
-Q039,What was the name of the game that was played by Stephen Haskell?,comparative,Scrabble,,0.0,0.0,0.0,0.0
-Q040,What political party is Maria Michlewitz?,comparative,progressive,,0.0,0.0,0.0,0.0
-Q041,What was the total weight of Progress 4?,comparative,"4,800 kilograms",,0.0,0.0,0.0,0.0
-Q042,What is the name of the horse that Copperbottom was offered for stud service in the early 1800s?,comparative,Tom Hal,,0.0,0.0,0.0,0.0
-Q043,Which of the following people died first: Sir John Squire or Sir Richard Steele?,comparative,Sir John Squire,,0.0,0.0,0.0,0.0
-Q044,What is Saint John the Baptist's original size?,comparative,69 by 57 centimetres,,0.0,0.0,0.0,0.0
-Q045,How many years after Tyne Tees Television's planned to build a studio did the company begin broadcasting in colour?,comparative,2,,0.0,0.0,0.0,0.0
-Q046,What was the first name of the person that started her career as a child dancer?,comparative,A,,0.0,0.0,0.0,0.0
-Q047,What species makes a greeting call?,comparative,African striped weasels,,0.0,0.0,0.0,0.0
-Q048,What are the four noble truths?,comparative,"one doctrine among others and are not particularly central , but are a part of the entire dhamma matrix .",,0.0,0.0,0.0,0.0
-Q049,What tribe did the Prescott gold strike lead to?,comparative,Tonto Apache,,0.0,0.0,0.0,0.0
-Q050,Which film did Menzies star in in 2014?,comparative,The Birthday Gift,,0.0,0.0,0.0,0.0
-Q051,What is the difference between set and ordinal numbers?,comparative,classes are not distinguished as they are in modern set-theoretic terminology.,,0.0,0.0,0.0,0.0
-Q052,Which character is in the film Vivaha Bandham?,comparative,Bharathi,,0.0,0.0,0.0,0.0
-Q053,What was the difference between Megacerops and modern bison?,comparative,Megacerops anatomy has been compared to the vertebrae and neck musculature of modern bison.,,0.0,0.0,0.0,0.0
-Q054,Which statement is true according to the example given?,comparative,"The sum of x_ 1 , x_ 2 , ldots ,x_ n , sum _ i , 1 n x_ i - sum _ i j max x_ i ,x_ j sum _ i j k max x_ i ,x_ j ,x_ k - cdots qquad cdots left(-1 right) n 1 max x_ 1 ,x_ 2 , ldots ,x_ n . end aligned",,0.0,0.0,0.0,0.0
-Q055,What is the most common form of congenital hearing loss in developed countries?,comparative,DFNB1,,0.0,0.0,0.0,0.0
-Q056,Which was the last division to be disbanded?,comparative,4th Gurkha Rifles,,0.0,0.0,0.0,0.0
-Q057,What is the origin of the knowledge that the Buddha had not been liberated from?,comparative,path intoxicants (asava),,0.0,0.0,0.0,0.0
-Q058,What are the characteristics of Acacia havilandiorum?,comparative,bushy shrub or small,,0.0,0.0,0.0,0.0
-Q059,What year did Josie Allensworth die?,comparative,1938,,0.0,0.0,0.0,0.0
-Q060,How many years after TV-am launched did A Midsummer Night's Tube air live?,comparative,1,,0.0,0.0,0.0,0.0
-Q061,Who was defeated in the film Stargate: Continuum?,comparative,System Lord Ba'al,,0.0,0.0,0.0,0.0
-Q062,Which group is larger: males or females?,comparative,females,,0.0,0.0,0.0,0.0
-Q063,How many years after Macmillan's successor was Alec Douglas-Home resigned the Lords to enter the House of Commons?,comparative,7,,0.0,0.0,0.0,0.0
-Q064,What is the area of the facility that SCI Albion is located in?,inferential,357-acre,,0.0,0.0,0.0,0.0
-Q065,What type of disease is it?,inferential,a corpse disease,,0.0,0.0,0.0,0.0
-Q066,What river is Creagrutus kunturus endemic to?,inferential,Maraón,,0.0,0.0,0.0,0.0
-Q067,How long does the leaflet fern remain?,inferential,60 100 cm,,0.0,0.0,0.0,0.0
-Q068,Who has a history of churches?,inferential,the municipality,,0.0,0.0,0.0,0.0
-Q069,What do the larvae of Cephonodes hylas feed on?,inferential,"Burchellia, Gardenia, Kraussia, Pavetta and Vangueria species",,0.0,0.0,0.0,0.0
-Q070,How does the spinner change the yarn?,inferential,"When the loop and the yarn are nearly fully plied together, a new loop of yarn is pulled through the initial loop, and spinning continues. This process is repeated until the yarn is all plied. This technique allows the spinner to try to match up thick and thin spots in the yarn, thus making for a smoother end product. Center-pull ball plying",,0.0,0.0,0.0,0.0
-Q071,How many more votes did Dan Bishop get than David Rouzer?,inferential,101.1,,0.0,0.0,0.0,0.0
-Q072,What happens to the greater sac during embryogenesis?,inferential,infolding,,0.0,0.0,0.0,0.0
-Q073,What is the main difference between the TB strain and that of Eurasian TB?,inferential,"This TB is a different strain from that prevalent today in the Americas, which is more closely related to a later Eurasian strain",,0.0,0.0,0.0,0.0
-Q074,What was the name of the building that was designed as a revenue generating property?,inferential,Kahramanlar Business Center,,0.0,0.0,0.0,0.0
-Q075,"Which of the following is not a book: Smith, F. B., Retreat of Tuberculosis, or The Conquest of Tuberculosis?",inferential,The Conquest of Tuberculosis,,0.0,0.0,0.0,0.0
-Q076,How many months after Selig announced he would shut down Apollo did he apologize to the company?,inferential,1,,0.0,0.0,0.0,0.0
-Q077,Which British party was allied with Gandhi and Nehru?,inferential,Labour,,0.0,0.0,0.0,0.0
-Q078,What is the full name of the bridge?,inferential,Harrison Road (U.S. Route 52),,0.0,0.0,0.0,0.0
-Q079,Which Swedish party was not listed on the list of municipalities in the first half of the 2000 census?,inferential,The Sweden Democrats,,0.0,0.0,0.0,0.0
-Q080,Who established the National Association of Realtors in 1916?,inferential,Chicago,,0.0,0.0,0.0,0.0
-Q081,Who is the first person that was featured in The Flash?,inferential,Jakeem Thunder,,0.0,0.0,0.0,0.0
-Q082,Who was the prime minister on 10 January 1963?,inferential,Harold Macmillan,,0.0,0.0,0.0,0.0
-Q083,What was the first name of the new team?,inferential,Budivelnyk,,0.0,0.0,0.0,0.0
-Q084,Where did Aries enter a shipyard for alterations and repairs?,inferential,"Boston, Massachusetts",,0.0,0.0,0.0,0.0
-Q085,What was the name of the Kurdish woman who was appointed by Abd al-Karim Qasim?,inferential,Zakiyya Hakki,,0.0,0.0,0.0,0.0
-Q086,What country is the orchid industry a major industry in?,inferential,Taiwan,,0.0,0.0,0.0,0.0
-Q087,What is the name of the species that African striped weasel is described as?,inferential,Taenia brachyacantha,,0.0,0.0,0.0,0.0
-Q088,How many years after Nepal was invited to participate in the 2019 AMF Futsal Men's World Cup was Nepal invited to compete in the International Soccer Futsal Cup 2018?,inferential,5,,0.0,0.0,0.0,0.0
-Q089,What is the most common type of damage to the inner ear?,inferential,temporal bone fracture,,0.0,0.0,0.0,0.0
-Q090,What did the new house have to do with the damage?,inferential,destroyed,,0.0,0.0,0.0,0.0
-MH001,What was the name of the city that drew people from across the world to the area?,multi-hop,Iceland,,0.0,0.0,0.0,0.0
-MH002,What are the main factors behind the collapse of the oil industry?,multi-hop,a natural gas shortage,,0.0,0.0,0.0,0.0
-MH003,Which other notable e-mail address does the United States have?,multi-hop,241-855-5311,,0.0,0.0,0.0,0.0
-MH004,Which two people share the same ethnicity?,multi-hop,Wome,,0.0,0.0,0.0,0.0
-MH005,What was the name of the city where Charles Albert lived?,multi-hop,Cheshir,,0.0,0.0,0.0,0.0
-MH006,What is the major difference in the cgh language?,multi-hop,English,,0.0,0.0,0.0,0.0
-MH007,Where was John Dante born?,multi-hop,Salburua,,0.0,0.0,0.0,0.0
-MH008,What type of supposition is used when someone makes a complication about the state of the world?,multi-hop,a supposition,,0.0,0.0,0.0,0.0
-MH009,What borough does the city of Dallas belong to?,multi-hop,Davidson County,,0.0,0.0,0.0,0.0
-MH010,In what year was the first era of military architecture?,multi-hop,1813,,0.0,0.0,0.0,0.0
+Question ID,Question,Question Type,Ground Truth,Generated Answer,MRR,NDCG@5,Recall@5,Response Time (s),Correct URL Found
+Q001,What award did Margaret Osborne DuPont receive in 1999?,factual,The Delaware Sports Hall of Fame,The following is a list of awards given to teams in Hong Kong.,0.0000,0.0000,0.0,1.70,No
+Q002,What is the name of the drug that is being researched?,factual,Armesocarb,Santa Rosa,0.0000,0.0000,0.0,0.59,No
+Q003,What was the highest honor given by the National Newspaper Publishers Association in 1971?,factual,NNPA Award,Biochemical Society has given awards to acknowledge excellence and achievement in biochemistry or in,0.0000,0.0000,0.0,3.81,No
+Q004,What is Ken Bruzenak's last name?,factual,Bruzenak,"he started his career in broadcasting, he has been working as a journalist and broadcaster for sever",0.0000,0.0000,0.0,1.83,No
+Q005,What was the name of the company that the ceiling panel collapse occurred on?,factual,Modern Continental Construction,[1],0.0000,0.0000,0.0,0.66,No
+Q006,What was the role of the Vice-president of the Bar Council in India?,factual,setting up of separate bench for Southern India,1914 to 1918,0.0000,0.0000,0.0,0.64,No
+Q007,What is the year of the text that Thomas Dastin wrote?,factual,1949,The Rosarius Philosophorum is known in manuscript and was printed in 1702 by Jean-Jacques Manget in ,1.0000,1.0000,1.0,3.82,Yes
+Q008,What was Macmillan's successor?,factual,Alec Douglas-Home,Britain's application to join the Common Market was vetoed by French President Charles de Gaulle on ,1.0000,1.0000,1.0,1.84,Yes
+Q009,What was the most important quarry in Europe?,factual,Tunstead Quarry,"Great Rocks Dale is a dry valley in the Derbyshire Peak District, known for its extensive quarrying.",1.0000,1.0000,1.0,3.66,Yes
+Q010,What did the 3rd Marine Regiment do to the Japanese?,factual,fired,"USS Wintle (DE-25): On Christmas night, she helped to repulse a Japanese air raid on U.S. Army Air F",0.0000,0.0000,0.0,3.72,No
+Q011,What was the primary reason for the difficulties in the way of educating children properly?,factual,the constant coming and going,The government conducted a very repressive policy against its political opponents. The leaders of th,0.0000,0.0000,0.0,2.56,No
+Q012,What city is Jericho located on?,factual,Manhattan,hamlet,1.0000,1.0000,1.0,0.64,Yes
+Q013,What is the key to the Service Initiative?,factual,a program encouraging hands-on service to children aimed towards a common goal,Key Clubs contribute to a global organizational total of more than 12 million hours of hands-on serv,1.0000,1.0000,1.0,2.26,Yes
+Q014,What is the use of outside air to cool indoor spaces?,factual,Ventilative cooling,"[1] Indoor bonsai: In addition to the need for seasonal temperature variation, many non-tropical gro",0.0000,0.0000,0.0,2.83,No
+Q015,Who was the first host of Stargate SG-1?,factual,Showtime,"London, England",0.0000,0.0000,0.0,0.65,No
+Q016,What was the title of Robyn's pop-up club series?,factual,Konichiwa Bitches goes Tutti Frutti,a lonely misfit teenager shoulder-shimmying alone in a gloomy corner on Club Vinyl's last ever Satur,1.0000,1.0000,1.0,2.83,Yes
+Q017,What event did Michael Trindade miss in the 2024 Summer Olympics?,factual,first round,The first round took place on 16 August 2004.,0.0000,0.0000,0.0,1.02,No
+Q018,"What was the goal objective of the event that was held in Washington, D.C.?",factual,35th anniversary of the creation of the Black Panther Party,New York.,0.0000,0.0000,0.0,0.69,No
+Q019,How many dollars are spent per question in the draft question?,factual,45 euros,"This policy of aggression on the part of the American satellites and in this case Turkey, on the par",0.0000,0.0000,0.0,2.23,No
+Q020,How many touchdowns did Marshall score?,factual,3,Williams would play in eight games the following season.,0.0000,0.0000,0.0,1.00,No
+Q021,What was the name of the company that Hamad was vice-president of before making his foray into polit,factual,Groupe Roche,Université Laval where he received both a bachelor's and master's degree.,1.0000,1.0000,1.0,1.49,Yes
+Q022,What is the name of the engineering company he is Managing Director and Chief Executive Officer of?,factual,Dorman Long Engineering Limited,Sunderland Arc,0.0000,0.0000,0.0,0.76,No
+Q023,What is the name of the person that the GCSB spied on?,factual,Kim Dotcom,The new Act covers a number of points such as: Bringing the GCSB and SIS together under a single Act,1.0000,1.0000,1.0,2.96,Yes
+Q024,What is FOG?,factual,Something that obscures and confuses a situation or someone's thought processes,[2],1.0000,0.8503,1.0,0.63,Yes
+Q025,Who did Sutee play for in 2003?,factual,Home United,2007,1.0000,1.0000,1.0,0.59,Yes
+Q026,What two institutions existed in Jericho?,factual,Charity Society of Jericho and Westbury,"Jericho Union Free and the Syosset Central School Districts, the boundaries of which differ somewhat",1.0000,1.0000,1.0,1.93,Yes
+Q027,Who was responsible for the formation of the population outside the capital?,factual,30 households,"There were 89 households, of which 20.2 were married couples living together, 43.8 were married coup",1.0000,0.9197,1.0,3.68,Yes
+Q028,Where did Milstein study at Goethe-Institut in Tel Aviv and Düsseldorf?,factual,German language,Zurich,0.0000,0.0000,0.0,0.61,No
+Q029,What is the last known species to be extinction-related?,factual,Megacerops,"Megacerops is an extinct genus of brontothere, an extinct group of rhinoceros-like browsers traditio",1.0000,0.9675,1.0,2.27,Yes
+Q030,What is the name of the band Stephen played for?,factual,Uncle John's Band,Pure,0.0000,0.0000,0.0,0.55,No
+Q031,How many crew and a dog were rescued from the burning Taiwanese fishing vessel Hsin Chin Chanz?,factual,13,"The construction of the ship was plagued by disaster, including asphyxi.",1.0000,1.0000,1.0,1.34,Yes
+Q032,What year did Celebration High School first compete in the Florida High School Athletic Association?,factual,,The text is organized as follows:,0.0000,0.0000,0.0,0.84,No
+Q033,Where did the Allensworths move to live?,factual,Los Angeles,"Allen, who was the leader of the town, died in an accident in 1914.",1.0000,1.0000,1.0,1.31,Yes
+Q034,What does Laurie use to help make a video of himself?,factual,a remote camera,Horror films for inspiring real-world violence,0.5000,0.6309,1.0,0.89,Yes
+Q035,Who is Sir Daniel?,factual,"a powerful, unscrupulous knight",Biochemical Society,0.0000,0.0000,0.0,0.63,No
+Q036,What is the structure of RELA?,factual,"N-terminal REL-homology domain (RHD), and also a C-terminal transactivation domain (TAD)","Glutathione reductase has been studied exhaustively since these early experiments, and is subsequent",0.0000,0.0000,0.0,2.23,No
+Q037,Which school does not have direct transfer intake of pupils?,comparative,studio schools,Central Coast Athletic Association,0.0000,0.0000,0.0,0.72,No
+Q038,What is the difference between gender equality and gender inequality?,comparative,gender equality,The three Pillars of Judaism: A Search for Faith and Values,0.0000,0.0000,0.0,1.41,No
+Q039,What was the name of the game that was played by Stephen Haskell?,comparative,Scrabble,"A book on casino blackjack, Van Nostrand 1982 with Virginia L. Graham: A book on casino gambling: wr",0.0000,0.0000,0.0,3.82,No
+Q040,What political party is Maria Michlewitz?,comparative,progressive,Delyagin was criticized for these words by the press secretary of the Russian president Dmitry Pesko,0.0000,0.0000,0.0,3.79,No
+Q041,What was the total weight of Progress 4?,comparative,"4,800 kilograms",The standard tonnage was 225 long tons,0.0000,0.0000,0.0,0.98,No
+Q042,What is the name of the horse that Copperbottom was offered for stud service in the early 1800s?,comparative,Tom Hal,Vaguely Noble,0.0000,0.0000,0.0,0.68,No
+Q043,Which of the following people died first: Sir John Squire or Sir Richard Steele?,comparative,Sir John Squire,"Sir Alfred Hamilton Grant, 12th Baronet",0.0000,0.0000,0.0,0.98,No
+Q044,What is Saint John the Baptist's original size?,comparative,69 by 57 centimetres,The current church was completed in 1658.,0.0000,0.0000,0.0,0.93,No
+Q045,How many years after Tyne Tees Television's planned to build a studio did the company begin broadcas,comparative,2,"The first television station in Nigeria, the Western Nigerian Government Broadcasting Corporation (W",0.0000,0.0000,0.0,2.20,No
+Q046,What was the first name of the person that started her career as a child dancer?,comparative,A,Amy Vachal,0.0000,0.0000,0.0,0.64,No
+Q047,What species makes a greeting call?,comparative,African striped weasels,"re, the male will signal her to return.",1.0000,0.9469,1.0,1.01,Yes
+Q048,What are the four noble truths?,comparative,"one doctrine among others and are not particularly central , but are a part of the entire dhamma mat",Orlyonok,0.0000,0.0000,0.0,0.69,No
+Q049,What tribe did the Prescott gold strike lead to?,comparative,Tonto Apache,Kevin's grandfather's cabin.,0.0000,0.0000,0.0,0.91,No
+Q050,Which film did Menzies star in in 2014?,comparative,The Birthday Gift,in a short film micro-play Groove is in the Heart.,1.0000,1.0000,1.0,1.27,Yes
+Q051,What is the difference between set and ordinal numbers?,comparative,classes are not distinguished as they are in modern set-theoretic terminology.,A class is a collection of mathematical objects that can be unambiguously defined by a property that,1.0000,1.0000,1.0,1.76,Yes
+Q052,Which character is in the film Vivaha Bandham?,comparative,Bharathi,Chandrashekar's ego clashes.,1.0000,1.0000,1.0,1.12,Yes
+Q053,What was the difference between Megacerops and modern bison?,comparative,Megacerops anatomy has been compared to the vertebrae and neck musculature of modern bison.,Megacerops had a massive skull which somewhat resembled that of modern rhinoceros. The skull was lon,1.0000,1.0000,1.0,2.13,Yes
+Q054,Which statement is true according to the example given?,comparative,"The sum of x_ 1 , x_ 2 , ldots ,x_ n , sum _ i , 1 n x_ i - sum _ i j max x_ i ,x_ j sum _ i j k max",The text is organized as follows:,0.0000,0.0000,0.0,0.87,No
+Q055,What is the most common form of congenital hearing loss in developed countries?,comparative,DFNB1,"Doppler Labs: On November 1, 2017, Doppler Labs announced that the company would be winding down ope",0.0000,0.0000,0.0,2.10,No
+Q056,Which was the last division to be disbanded?,comparative,4th Gurkha Rifles,the first phase of the Syrian Civil War,0.0000,0.0000,0.0,0.88,No
+Q057,What is the origin of the knowledge that the Buddha had not been liberated from?,comparative,path intoxicants (asava),What are the names of the three English words of Etruscan origin?,0.0000,0.0000,0.0,1.24,No
+Q058,What are the characteristics of Acacia havilandiorum?,comparative,bushy shrub or small,Acacia havilandiorum is a shrub of the genus Acacia and the subgenus Plurinerves.,1.0000,1.0000,1.0,2.10,Yes
+Q059,What year did Josie Allensworth die?,comparative,1938,Allensworth land.,1.0000,1.0000,1.0,0.76,Yes
+Q060,How many years after TV-am launched did A Midsummer Night's Tube air live?,comparative,1,USS Wintle (DE-25),0.0000,0.0000,0.0,0.97,No
+Q061,Who was defeated in the film Stargate: Continuum?,comparative,System Lord Ba'al,"Dreamer defeated Jason Hotch in 1:15, while Ray defeated Bh",0.0000,0.0000,0.0,1.15,No
+Q062,Which group is larger: males or females?,comparative,females,Females had a median age of 40.9 years.,0.0000,0.0000,0.0,1.13,No
+Q063,How many years after Macmillan's successor was Alec Douglas-Home resigned the Lords to enter the Hou,comparative,7,de Gaulle,1.0000,1.0000,1.0,0.71,Yes
+Q064,What is the area of the facility that SCI Albion is located in?,inferential,357-acre,A list of correctional facilities in Pennsylvania,1.0000,1.0000,1.0,0.88,Yes
+Q065,What type of disease is it?,inferential,a corpse disease,transmitting.,0.0000,0.0000,0.0,0.63,No
+Q066,What river is Creagrutus kunturus endemic to?,inferential,Maraón,Weston's buckwheat),0.0000,0.0000,0.0,0.97,No
+Q067,How long does the leaflet fern remain?,inferential,60 100 cm,"a hairy achene, the pappus with whitish bristles about 2.5 mm (0.098 in) long.",0.0000,0.0000,0.0,2.07,No
+Q068,Who has a history of churches?,inferential,the municipality,The staamál,0.2000,0.3869,1.0,0.77,Yes
+Q069,What do the larvae of Cephonodes hylas feed on?,inferential,"Burchellia, Gardenia, Kraussia, Pavetta and Vangueria species",Mecistocephalus glabridorsalis,0.0000,0.0000,0.0,1.23,No
+Q070,How does the spinner change the yarn?,inferential,"When the loop and the yarn are nearly fully plied together, a new loop of yarn is pulled through the","spinning wheel, causes the yarn to expand.",1.0000,1.0000,1.0,0.92,Yes
+Q071,How many more votes did Dan Bishop get than David Rouzer?,inferential,101.1,Glace Bay,0.0000,0.0000,0.0,0.64,No
+Q072,What happens to the greater sac during embryogenesis?,inferential,infolding,.,0.0000,0.0000,0.0,0.60,No
+Q073,What is the main difference between the TB strain and that of Eurasian TB?,inferential,"This TB is a different strain from that prevalent today in the Americas, which is more closely relat",The Pool 3 Round 3 Round 4 Pool 1 v Pool 4 Round 1 (England) Round 2 Round 1 (Wales) Round 3 Round 4,0.0000,0.0000,0.0,3.76,No
+Q074,What was the name of the building that was designed as a revenue generating property?,inferential,Kahramanlar Business Center,Turkish Chamber of Civil Engineers lists Kzlay Emek Business Center as one of the fifty civil engine,1.0000,1.0000,1.0,1.88,Yes
+Q075,"Which of the following is not a book: Smith, F. B., Retreat of Tuberculosis, or The Conquest of Tube",inferential,The Conquest of Tuberculosis,"Addie Brown: Although the letters contain Brown's private thoughts and expressions of eroticism, the",0.0000,0.0000,0.0,3.43,No
+Q076,How many months after Selig announced he would shut down Apollo did he apologize to the company?,inferential,1,charge,1.0000,1.0000,1.0,0.54,Yes
+Q077,Which British party was allied with Gandhi and Nehru?,inferential,Labour,"In the late 1940s, the British government gave India and Pakistan independence.",1.0000,1.0000,1.0,1.21,Yes
+Q078,What is the full name of the bridge?,inferential,Harrison Road (U.S. Route 52),collapsed due to damage from floating debris.,1.0000,1.0000,1.0,0.92,Yes
+Q079,Which Swedish party was not listed on the list of municipalities in the first half of the 2000 censu,inferential,The Sweden Democrats,The sources are identical to the table above. The Swedish general election sourced from SVT's electi,1.0000,1.0000,1.0,3.66,Yes
+Q080,Who established the National Association of Realtors in 1916?,inferential,Chicago,Civil Rights Act.,1.0000,0.9675,1.0,0.68,Yes
+Q081,Who is the first person that was featured in The Flash?,inferential,Jakeem Thunder,Puerto Rico The highest rainfalls reported in Puerto Rico from Hurricane Marilyn were 5.6 in (140 mm,1.0000,0.8855,1.0,3.82,Yes
+Q082,Who was the prime minister on 10 January 1963?,inferential,Harold Macmillan,Britain was to seek high employment; whereas his treasury ministers argued that to support the Brett,1.0000,1.0000,1.0,3.22,Yes
+Q083,What was the first name of the new team?,inferential,Budivelnyk,FC Admira,0.0000,0.0000,0.0,0.64,No
+Q084,Where did Aries enter a shipyard for alterations and repairs?,inferential,"Boston, Massachusetts","United States,",1.0000,1.0000,1.0,0.64,Yes
+Q085,What was the name of the Kurdish woman who was appointed by Abd al-Karim Qasim?,inferential,Zakiyya Hakki,The Majalla claims that Naqdi is an Iraqi national of Iranian origin and the son of a Shiite cleric ,0.0000,0.0000,0.0,3.73,No
+Q086,What country is the orchid industry a major industry in?,inferential,Taiwan,"Welfare state A comprehensive welfare state was created with the National Insurance Act 1946, in whi",0.0000,0.0000,0.0,2.87,No
+Q087,What is the name of the species that African striped weasel is described as?,inferential,Taenia brachyacantha,"African striped weasel is a small mammal native to sub-Saharan Africa, where its range stretches fro",1.0000,1.0000,1.0,2.51,Yes
+Q088,How many years after Nepal was invited to participate in the 2019 AMF Futsal Men's World Cup was Nep,inferential,5,The 2015 Portland Thorns FC season: National Women's Soccer League College Draft The Thorns did not ,0.0000,0.0000,0.0,3.76,No
+Q089,What is the most common type of damage to the inner ear?,inferential,temporal bone fracture,[1],0.0000,0.0000,0.0,0.64,No
+Q090,What did the new house have to do with the damage?,inferential,destroyed,Killed,1.0000,0.8503,1.0,0.70,Yes
+MH001,What was the name of the city that drew people from across the world to the area?,multi-hop,Iceland,"The population density was 2,272.1.",0.0000,0.0000,0.0,1.08,No
+MH002,What are the main factors behind the collapse of the oil industry?,multi-hop,a natural gas shortage,The Panama Canal and Cuba.,0.0000,0.0000,0.0,0.78,No
+MH003,Which other notable e-mail address does the United States have?,multi-hop,241-855-5311,In February 2007 Google filed legal action against the owners of gmail.pl.,0.0000,0.0000,0.0,1.32,No
+MH004,Which two people share the same ethnicity?,multi-hop,Wome,more inclusive and connect different social classes through shared culture and history,0.0000,0.0000,0.0,1.06,No
+MH005,What was the name of the city where Charles Albert lived?,multi-hop,Cheshir,"Charles Parker Jr. was born in Kansas City, Kansas, to Charles Parker, Jr.",0.0000,0.0000,0.0,1.41,No
+MH006,What is the major difference in the cgh language?,multi-hop,English,is an attempt to promote a more linguistically efficient writing system for highly agglutinative Sou,0.0000,0.0000,0.0,1.84,No
+MH007,Where was John Dante born?,multi-hop,Salburua,Francesco Fusco was Signore di Laviano e Trent,0.0000,0.0000,0.0,1.27,No
+MH008,What type of supposition is used when someone makes a complication about the state of the world?,multi-hop,a supposition,American.,0.0000,0.0000,0.0,0.61,No
+MH009,What borough does the city of Dallas belong to?,multi-hop,Davidson County,Salburua,0.0000,0.0000,0.0,0.70,No
+MH010,In what year was the first era of military architecture?,multi-hop,1813,The main character of the passage is a list of English words of Etruscan origin.,0.0000,0.0000,0.0,1.49,No

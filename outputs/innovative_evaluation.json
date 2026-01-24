@@ -1,0 +1,28 @@
+{
+  "confidence_calibration": {
+    "brier_score": 0.013401061868875668,
+    "expected_calibration_error": 0.06777537113895865,
+    "num_samples": 100,
+    "avg_confidence": 0.42405361819999987,
+    "avg_correctness": 0.38
+  },
+  "hallucination_detection": {
+    "avg_hallucination_rate": 0.79,
+    "num_samples": 50,
+    "high_hallucination_count": 40
+  },
+  "llm_as_judge": {
+    "avg_factual_accuracy": 0.1296539439592169,
+    "avg_completeness": 0.8085466589861752,
+    "avg_relevance": 0.3759999999999998,
+    "avg_coherence": 0.6469999999999999,
+    "overall_score": 1.0858139381988479
+  },
+  "adversarial_testing": {
+    "question_type_robustness": {},
+    "multi_hop_performance": 0.0,
+    "comparative_performance": 0.2962962962962963,
+    "inferential_performance": 0.4888888888888889,
+    "performance_variance": 0.0356688850308642
+  }
+}

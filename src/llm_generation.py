@@ -161,7 +161,13 @@ Answer:"""
         # Generate
         with torch.no_grad():
             if max_new_tokens is None:
-                max_new_tokens = min(256, self.max_length - input_token_count)
+                # Calculate available tokens, ensuring minimum of 64 to prevent errors
+                # when input is close to or exceeds max_length
+                available_tokens = self.max_length - input_token_count
+                max_new_tokens = max(64, min(256, available_tokens))
+
+            # Ensure max_new_tokens is always positive
+            max_new_tokens = max(1, max_new_tokens)
 
             outputs = self.model.generate(
                 **inputs,

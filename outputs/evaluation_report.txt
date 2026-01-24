@@ -1,0 +1,25 @@
+======================================================================
+HYBRID RAG SYSTEM - EVALUATION REPORT
+======================================================================
+
+Generated: 2026-01-24 14:44:51
+
+1. EXECUTIVE SUMMARY
+----------------------------------------------------------------------
+Questions Evaluated: 100/100
+MRR (URL Level): 0.3670
+NDCG@5: 0.3641
+Recall@5: 0.3800
+BERTScore F1: 0.4538
+Avg Response Time: 1.58s
+
+2. ABLATION STUDY
+----------------------------------------------------------------------
+Dense Only:  MRR=0.3433
+Sparse Only: MRR=0.3437
+Hybrid RRF:  MRR=0.3670
+
+3. INNOVATIVE EVALUATION
+----------------------------------------------------------------------
+Brier Score: 0.0134
+LLM Judge Overall: 1.09/10
