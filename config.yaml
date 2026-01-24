@@ -1,0 +1,76 @@
+# Hybrid RAG System Configuration
+
+# Dataset Configuration
+dataset:
+  fixed_urls_count: 200
+  random_urls_count: 300
+  min_article_words: 200
+  fixed_urls_file: "data/fixed_urls.json"
+
+# Text Chunking Configuration
+chunking:
+  chunk_size: 300  # tokens (200-400 range)
+  overlap: 50      # tokens
+
+# Dense Retrieval Configuration
+dense_retrieval:
+  model_name: "sentence-transformers/all-mpnet-base-v2"
+  index_type: "faiss"  # or "chromadb"
+  top_k: 10
+  similarity_metric: "cosine"
+
+# Sparse Retrieval Configuration
+sparse_retrieval:
+  algorithm: "bm25"
+  top_k: 10
+  k1: 1.5
+  b: 0.75
+
+# RRF Configuration
+rrf:
+  k_constant: 60
+  top_n_chunks: 5  # Final chunks to use for generation
+
+# LLM Configuration
+llm:
+  model_name: "google/flan-t5-base"  # or "distilgpt2", "meta-llama/Llama-2-7b-chat-hf"
+  max_length: 512
+  temperature: 0.7
+  top_p: 0.9
+
+# Question Generation Configuration
+question_generation:
+  num_questions: 100
+  question_types:
+    - "factual"
+    - "comparative"
+    - "inferential"
+    - "multi-hop"
+  qg_model: "google/flan-t5-base"
+
+# Evaluation Configuration
+evaluation:
+  metrics:
+    - "mrr_url"           # Mean Reciprocal Rank (URL level)
+    - "ndcg_at_k"        # Normalized Discounted Cumulative Gain
+    - "bert_score"       # BERTScore for semantic similarity
+  k_values: [1, 3, 5, 10]
+
+# UI Configuration
+ui:
+  framework: "streamlit"
+  title: "Hybrid RAG System - Wikipedia Q&A"
+  theme: "light"
+
+# Paths
+paths:
+  data_dir: "data"
+  output_dir: "outputs"
+  logs_dir: "logs"
+  models_dir: "models"
+  vector_index_dir: "data/vector_index"
+  bm25_index_file: "data/bm25_index.pkl"
+  corpus_file: "data/corpus.json"
+  questions_file: "data/questions.json"
+  results_file: "outputs/evaluation_results.json"
+  report_file: "outputs/evaluation_report.pdf"

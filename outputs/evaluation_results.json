@@ -1,0 +1,5674 @@
+{
+  "num_questions": 100,
+  "num_errors": 100,
+  "errors": [
+    {
+      "question_id": "Q001",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q002",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q003",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q004",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q005",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q006",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q007",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q008",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q009",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q010",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q011",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q012",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q013",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q014",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q015",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q016",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q017",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q018",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q019",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q020",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q021",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q022",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q023",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q024",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q025",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q026",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q027",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q028",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q029",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q030",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q031",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q032",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q033",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q034",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q035",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q036",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q037",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q038",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q039",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q040",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q041",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q042",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q043",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q044",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q045",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q046",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q047",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q048",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q049",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q050",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q051",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q052",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q053",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q054",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q055",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q056",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q057",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q058",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q059",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q060",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q061",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q062",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q063",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q064",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q065",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q066",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q067",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q068",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q069",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q070",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q071",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q072",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q073",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q074",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q075",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q076",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q077",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q078",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q079",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q080",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q081",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q082",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q083",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q084",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q085",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q086",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q087",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q088",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q089",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "Q090",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "MH001",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "MH002",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "MH003",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "MH004",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "MH005",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "MH006",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "MH007",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "MH008",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "MH009",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    },
+    {
+      "question_id": "MH010",
+      "error": "`max_new_tokens` must be greater than 0, but is 0."
+    }
+  ],
+  "avg_response_time": 0.0,
+  "response_times": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "metrics": {
+    "mrr": {
+      "mrr": 0.0,
+      "reciprocal_ranks": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "details": [
+        {
+          "question_id": "Q001",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Margaret_Osborne_duPont"
+        },
+        {
+          "question_id": "Q002",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Armesocarb"
+        },
+        {
+          "question_id": "Q003",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Carl_Stokes"
+        },
+        {
+          "question_id": "Q004",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Ken_Bruzenak"
+        },
+        {
+          "question_id": "Q005",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Modern_Continental"
+        },
+        {
+          "question_id": "Q006",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Bar_Council_of_Andhra_Pradesh"
+        },
+        {
+          "question_id": "Q007",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/John_Dastin"
+        },
+        {
+          "question_id": "Q008",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Post-war_Britain_(1945\u20131979)"
+        },
+        {
+          "question_id": "Q009",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Great_Rocks_Dale"
+        },
+        {
+          "question_id": "Q010",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Battle_of_Piva_Forks"
+        },
+        {
+          "question_id": "Q011",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Tuberculosis_Preventorium_for_Children"
+        },
+        {
+          "question_id": "Q012",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Jericho,_New_York"
+        },
+        {
+          "question_id": "Q013",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Key_Club"
+        },
+        {
+          "question_id": "Q014",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Ventilative_cooling"
+        },
+        {
+          "question_id": "Q015",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Stargate_SG-1"
+        },
+        {
+          "question_id": "Q016",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Dancing_on_My_Own"
+        },
+        {
+          "question_id": "Q017",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Michael_Trindade"
+        },
+        {
+          "question_id": "Q018",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/New_Black_Panther_Party"
+        },
+        {
+          "question_id": "Q019",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Le_Jeu_des_1000_euros"
+        },
+        {
+          "question_id": "Q020",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Darius_Marshall"
+        },
+        {
+          "question_id": "Q021",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Sam_Hamad"
+        },
+        {
+          "question_id": "Q022",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Chris_Ijeli"
+        },
+        {
+          "question_id": "Q023",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Right_to_privacy_in_New_Zealand"
+        },
+        {
+          "question_id": "Q024",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Emotional_blackmail"
+        },
+        {
+          "question_id": "Q025",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Sutee_Suksomkit"
+        },
+        {
+          "question_id": "Q026",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Jericho,_New_York"
+        },
+        {
+          "question_id": "Q027",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Guan_Zhong"
+        },
+        {
+          "question_id": "Q028",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Avishai_Milshtein"
+        },
+        {
+          "question_id": "Q029",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Megacerops"
+        },
+        {
+          "question_id": "Q030",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/May_1977_(album)"
+        },
+        {
+          "question_id": "Q031",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/USNS_Guadalupe"
+        },
+        {
+          "question_id": "Q032",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Celebration_High_School"
+        },
+        {
+          "question_id": "Q033",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Josephine_Leavell_Allensworth"
+        },
+        {
+          "question_id": "Q034",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Scream_(1996_film)"
+        },
+        {
+          "question_id": "Q035",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Black_Arrow_(1985_film)"
+        },
+        {
+          "question_id": "Q036",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/RELA"
+        },
+        {
+          "question_id": "Q037",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Studio_school"
+        },
+        {
+          "question_id": "Q038",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Just_Transition_Mechanism"
+        },
+        {
+          "question_id": "Q039",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/National_Scrabble_Championship_(UK)"
+        },
+        {
+          "question_id": "Q040",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Aaron_Michlewitz"
+        },
+        {
+          "question_id": "Q041",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Progress_4"
+        },
+        {
+          "question_id": "Q042",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Canadian_horse"
+        },
+        {
+          "question_id": "Q043",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Oxford_poetry_anthologies"
+        },
+        {
+          "question_id": "Q044",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Saint_John_the_Baptist_(Leonardo)"
+        },
+        {
+          "question_id": "Q045",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Timeline_of_Tyne_Tees_Television"
+        },
+        {
+          "question_id": "Q046",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/A_Nyein_Phyu"
+        },
+        {
+          "question_id": "Q047",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/African_striped_weasel"
+        },
+        {
+          "question_id": "Q048",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Four_Noble_Truths"
+        },
+        {
+          "question_id": "Q049",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Tonto_Apache_Tribe_of_Arizona"
+        },
+        {
+          "question_id": "Q050",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Tobias_Menzies"
+        },
+        {
+          "question_id": "Q051",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Class_(set_theory)"
+        },
+        {
+          "question_id": "Q052",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Vivaha_Bandham"
+        },
+        {
+          "question_id": "Q053",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Megacerops"
+        },
+        {
+          "question_id": "Q054",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Maximum-minimums_identity"
+        },
+        {
+          "question_id": "Q055",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Causes_of_hearing_loss"
+        },
+        {
+          "question_id": "Q056",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/11th_Gurkha_Rifles"
+        },
+        {
+          "question_id": "Q057",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Four_Noble_Truths"
+        },
+        {
+          "question_id": "Q058",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Acacia_havilandiorum"
+        },
+        {
+          "question_id": "Q059",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Josephine_Leavell_Allensworth"
+        },
+        {
+          "question_id": "Q060",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Timeline_of_Tyne_Tees_Television"
+        },
+        {
+          "question_id": "Q061",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Stargate_SG-1"
+        },
+        {
+          "question_id": "Q062",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Wayland,_Missouri"
+        },
+        {
+          "question_id": "Q063",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Post-war_Britain_(1945\u20131979)"
+        },
+        {
+          "question_id": "Q064",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/SCI_Albion"
+        },
+        {
+          "question_id": "Q065",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/History_of_tuberculosis"
+        },
+        {
+          "question_id": "Q066",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Creagrutus_kunturus"
+        },
+        {
+          "question_id": "Q067",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Roystonea_oleracea"
+        },
+        {
+          "question_id": "Q068",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Sj\u00f6bo_Municipality"
+        },
+        {
+          "question_id": "Q069",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Cephonodes_hylas"
+        },
+        {
+          "question_id": "Q070",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Plying"
+        },
+        {
+          "question_id": "Q071",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/2024_United_States_House_of_Representatives_elections_in_North_Carolina"
+        },
+        {
+          "question_id": "Q072",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Lesser_sac"
+        },
+        {
+          "question_id": "Q073",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/History_of_tuberculosis"
+        },
+        {
+          "question_id": "Q074",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Kahramanlar_Business_Center"
+        },
+        {
+          "question_id": "Q075",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/History_of_tuberculosis"
+        },
+        {
+          "question_id": "Q076",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Reddit_API_controversy"
+        },
+        {
+          "question_id": "Q077",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Post-war_Britain_(1945\u20131979)"
+        },
+        {
+          "question_id": "Q078",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Miamitown_bridge_collapse"
+        },
+        {
+          "question_id": "Q079",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Sj\u00f6bo_Municipality"
+        },
+        {
+          "question_id": "Q080",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Real_estate"
+        },
+        {
+          "question_id": "Q081",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Paul_Ryan_(cartoonist)"
+        },
+        {
+          "question_id": "Q082",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Post-war_Britain_(1945\u20131979)"
+        },
+        {
+          "question_id": "Q083",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/FC_Stroitel_Pripyat"
+        },
+        {
+          "question_id": "Q084",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/USS_Aries_(AK-51)"
+        },
+        {
+          "question_id": "Q085",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Kurdish_women"
+        },
+        {
+          "question_id": "Q086",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Floriculture_in_Taiwan"
+        },
+        {
+          "question_id": "Q087",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/African_striped_weasel"
+        },
+        {
+          "question_id": "Q088",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Nepal_national_futsal_team"
+        },
+        {
+          "question_id": "Q089",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Causes_of_hearing_loss"
+        },
+        {
+          "question_id": "Q090",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Wufeng_Lin_Family_Mansion_and_Garden"
+        },
+        {
+          "question_id": "MH001",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Sta\u00f0am\u00e1lin"
+        },
+        {
+          "question_id": "MH002",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Eric_Genrich"
+        },
+        {
+          "question_id": "MH003",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/The_Late_Late_Show_(Irish_talk_show)"
+        },
+        {
+          "question_id": "MH004",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Feminist_pathways_perspective"
+        },
+        {
+          "question_id": "MH005",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Henry_Verney,_18th_Baron_Willoughby_de_Broke"
+        },
+        {
+          "question_id": "MH006",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Oxford_poetry_anthologies"
+        },
+        {
+          "question_id": "MH007",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Salburua"
+        },
+        {
+          "question_id": "MH008",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Bujari_Ahmed"
+        },
+        {
+          "question_id": "MH009",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Kelly,_North_Carolina"
+        },
+        {
+          "question_id": "MH010",
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "ground_truth_url": "https://en.wikipedia.org/wiki/Church_Street\u2013Congress_Street_Historic_District"
+        }
+      ],
+      "metric_name": "Mean Reciprocal Rank (URL Level)",
+      "description": "Average of 1/rank where rank is the position of first correct URL",
+      "interpretation": "No correct URLs found"
+    },
+    "ndcg": {
+      "ndcg": 0.0,
+      "ndcg_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "k": 5,
+      "details": [
+        {
+          "question_id": "Q001",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q002",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q003",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q004",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q005",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q006",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q007",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q008",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q009",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q010",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q011",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q012",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q013",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q014",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q015",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q016",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q017",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q018",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q019",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q020",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q021",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q022",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q023",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q024",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q025",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q026",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q027",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q028",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q029",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q030",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q031",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q032",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q033",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q034",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q035",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q036",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q037",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q038",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q039",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q040",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q041",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q042",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q043",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q044",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q045",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q046",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q047",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q048",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q049",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q050",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q051",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q052",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q053",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q054",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q055",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q056",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q057",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q058",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q059",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q060",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q061",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q062",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q063",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q064",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q065",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q066",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q067",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q068",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q069",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q070",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q071",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q072",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q073",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q074",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q075",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q076",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q077",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q078",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q079",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q080",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q081",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q082",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q083",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q084",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q085",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q086",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q087",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q088",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q089",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "Q090",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "MH001",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "MH002",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "MH003",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "MH004",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "MH005",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "MH006",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "MH007",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "MH008",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "MH009",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        },
+        {
+          "question_id": "MH010",
+          "ndcg": 0.0,
+          "dcg": 0.0,
+          "idcg": 0.0
+        }
+      ],
+      "metric_name": "NDCG@5",
+      "justification": "NDCG measures ranking quality by considering both relevance and position. It penalizes relevant documents appearing lower in the ranking, making it ideal for evaluating retrieval systems where rank matters.",
+      "calculation": "DCG = \u03a3(rel_i / log2(i+1)), NDCG = DCG / IDCG where IDCG is the ideal (perfect) DCG",
+      "interpretation": "NDCG@5 of 0.0000 indicates poor ranking quality. Score of 1.0 is perfect, 0.0 means no relevant documents retrieved."
+    },
+    "bert_score": {
+      "bert_score_precision": 0.0,
+      "bert_score_recall": 0.0,
+      "bert_score_f1": 0.0,
+      "precision_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "recall_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "f1_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "details": [
+        {
+          "question_id": "Q001",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q002",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q003",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q004",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q005",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q006",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q007",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q008",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q009",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q010",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q011",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q012",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q013",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q014",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q015",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q016",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q017",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q018",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q019",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q020",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q021",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q022",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q023",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q024",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q025",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q026",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q027",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q028",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q029",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q030",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q031",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q032",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q033",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q034",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q035",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q036",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q037",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q038",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q039",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q040",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q041",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q042",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q043",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q044",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q045",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q046",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q047",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q048",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q049",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q050",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q051",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q052",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q053",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q054",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q055",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q056",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q057",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q058",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q059",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q060",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q061",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q062",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q063",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q064",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q065",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q066",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q067",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q068",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q069",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q070",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q071",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q072",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q073",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q074",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q075",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q076",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q077",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q078",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q079",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q080",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q081",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q082",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q083",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q084",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q085",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q086",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q087",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q088",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q089",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "Q090",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "MH001",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "MH002",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "MH003",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "MH004",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "MH005",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "MH006",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "MH007",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "MH008",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "MH009",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "question_id": "MH010",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      ],
+      "metric_name": "BERTScore Semantic Similarity",
+      "justification": "BERTScore captures semantic similarity beyond lexical overlap by using contextual embeddings. It is robust to paraphrasing and better reflects answer quality than traditional metrics like BLEU or ROUGE.",
+      "calculation": "For each token, compute cosine similarity of BERT embeddings. Precision = avg max similarity for candidate tokens, Recall = avg max similarity for reference tokens, F1 = harmonic mean.",
+      "interpretation": "BERTScore F1 of 0.0000 indicates poor semantic similarity. Higher scores mean generated answers are semantically closer to ground truth."
+    },
+    "precision_at_k": {
+      "precision_at_k": 0.0,
+      "k": 5,
+      "precisions": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "recall_at_k": {
+      "recall_at_k": 0.0,
+      "k": 5,
+      "recalls": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "rouge": {
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "rouge1_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rouge2_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rougeL_scores": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "exact_match": {
+      "exact_match": 0.02,
+      "matches": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "retrieval_results": [
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    },
+    {
+      "fused_results": []
+    }
+  ],
+  "generated_answers": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "ablation_study": {
+    "dense_only": {
+      "mrr": 0.7814444444444445,
+      "ndcg": 0.7887748551987173
+    },
+    "sparse_only": {
+      "mrr": 0.8231944444444446,
+      "ndcg": 0.8058289089870534
+    },
+    "hybrid_rrf": {
+      "mrr": 0.8303333333333334,
+      "ndcg": 0.8187368254525081
+    }
+  },
+  "error_analysis": {
+    "errors_by_type": {
+      "factual": {
+        "retrieval_failures": 36,
+        "generation_failures": 36,
+        "total": 36
+      },
+      "comparative": {
+        "retrieval_failures": 27,
+        "generation_failures": 27,
+        "total": 27
+      },
+      "inferential": {
+        "retrieval_failures": 27,
+        "generation_failures": 27,
+        "total": 27
+      },
+      "multi-hop": {
+        "retrieval_failures": 10,
+        "generation_failures": 10,
+        "total": 10
+      }
+    },
+    "failure_examples": [
+      {
+        "question_id": "Q001",
+        "question_type": "factual",
+        "failure_type": "retrieval",
+        "question": "What award did Margaret Osborne DuPont receive in 1999?",
+        "ground_truth_url": "https://en.wikipedia.org/wiki/Margaret_Osborne_duPont",
+        "retrieved_urls": []
+      },
+      {
+        "question_id": "Q001",
+        "question_type": "factual",
+        "failure_type": "generation",
+        "question": "What award did Margaret Osborne DuPont receive in 1999?",
+        "generated_answer": "",
+        "expected_answer": "The Delaware Sports Hall of Fame"
+      },
+      {
+        "question_id": "Q002",
+        "question_type": "factual",
+        "failure_type": "retrieval",
+        "question": "What is the name of the drug that is being researched?",
+        "ground_truth_url": "https://en.wikipedia.org/wiki/Armesocarb",
+        "retrieved_urls": []
+      },
+      {
+        "question_id": "Q002",
+        "question_type": "factual",
+        "failure_type": "generation",
+        "question": "What is the name of the drug that is being researched?",
+        "generated_answer": "",
+        "expected_answer": "Armesocarb"
+      },
+      {
+        "question_id": "Q003",
+        "question_type": "factual",
+        "failure_type": "retrieval",
+        "question": "What was the highest honor given by the National Newspaper Publishers Association in 1971?",
+        "ground_truth_url": "https://en.wikipedia.org/wiki/Carl_Stokes",
+        "retrieved_urls": []
+      },
+      {
+        "question_id": "Q003",
+        "question_type": "factual",
+        "failure_type": "generation",
+        "question": "What was the highest honor given by the National Newspaper Publishers Association in 1971?",
+        "generated_answer": "",
+        "expected_answer": "NNPA Award"
+      },
+      {
+        "question_id": "Q004",
+        "question_type": "factual",
+        "failure_type": "retrieval",
+        "question": "What is Ken Bruzenak's last name?",
+        "ground_truth_url": "https://en.wikipedia.org/wiki/Ken_Bruzenak",
+        "retrieved_urls": []
+      },
+      {
+        "question_id": "Q004",
+        "question_type": "factual",
+        "failure_type": "generation",
+        "question": "What is Ken Bruzenak's last name?",
+        "generated_answer": "",
+        "expected_answer": "Bruzenak"
+      },
+      {
+        "question_id": "Q005",
+        "question_type": "factual",
+        "failure_type": "retrieval",
+        "question": "What was the name of the company that the ceiling panel collapse occurred on?",
+        "ground_truth_url": "https://en.wikipedia.org/wiki/Modern_Continental",
+        "retrieved_urls": []
+      },
+      {
+        "question_id": "Q005",
+        "question_type": "factual",
+        "failure_type": "generation",
+        "question": "What was the name of the company that the ceiling panel collapse occurred on?",
+        "generated_answer": "",
+        "expected_answer": "Modern Continental Construction"
+      },
+      {
+        "question_id": "Q006",
+        "question_type": "factual",
+        "failure_type": "retrieval",
+        "question": "What was the role of the Vice-president of the Bar Council in India?",
+        "ground_truth_url": "https://en.wikipedia.org/wiki/Bar_Council_of_Andhra_Pradesh",
+        "retrieved_urls": []
+      },
+      {
+        "question_id": "Q006",
+        "question_type": "factual",
+        "failure_type": "generation",
+        "question": "What was the role of the Vice-president of the Bar Council in India?",
+        "generated_answer": "",
+        "expected_answer": "setting up of separate bench for Southern India"
+      },
+      {
+        "question_id": "Q007",
+        "question_type": "factual",
+        "failure_type": "retrieval",
+        "question": "What is the year of the text that Thomas Dastin wrote?",
+        "ground_truth_url": "https://en.wikipedia.org/wiki/John_Dastin",
+        "retrieved_urls": []
+      },
+      {
+        "question_id": "Q007",
+        "question_type": "factual",
+        "failure_type": "generation",
+        "question": "What is the year of the text that Thomas Dastin wrote?",
+        "generated_answer": "",
+        "expected_answer": "1949"
+      },
+      {
+        "question_id": "Q008",
+        "question_type": "factual",
+        "failure_type": "retrieval",
+        "question": "What was Macmillan's successor?",
+        "ground_truth_url": "https://en.wikipedia.org/wiki/Post-war_Britain_(1945\u20131979)",
+        "retrieved_urls": []
+      },
+      {
+        "question_id": "Q008",
+        "question_type": "factual",
+        "failure_type": "generation",
+        "question": "What was Macmillan's successor?",
+        "generated_answer": "",
+        "expected_answer": "Alec Douglas-Home"
+      },
+      {
+        "question_id": "Q009",
+        "question_type": "factual",
+        "failure_type": "retrieval",
+        "question": "What was the most important quarry in Europe?",
+        "ground_truth_url": "https://en.wikipedia.org/wiki/Great_Rocks_Dale",
+        "retrieved_urls": []
+      },
+      {
+        "question_id": "Q009",
+        "question_type": "factual",
+        "failure_type": "generation",
+        "question": "What was the most important quarry in Europe?",
+        "generated_answer": "",
+        "expected_answer": "Tunstead Quarry"
+      },
+      {
+        "question_id": "Q010",
+        "question_type": "factual",
+        "failure_type": "retrieval",
+        "question": "What did the 3rd Marine Regiment do to the Japanese?",
+        "ground_truth_url": "https://en.wikipedia.org/wiki/Battle_of_Piva_Forks",
+        "retrieved_urls": []
+      },
+      {
+        "question_id": "Q010",
+        "question_type": "factual",
+        "failure_type": "generation",
+        "question": "What did the 3rd Marine Regiment do to the Japanese?",
+        "generated_answer": "",
+        "expected_answer": "fired"
+      }
+    ]
+  },
+  "innovative_metrics": {
+    "llm_as_judge": {
+      "avg_overall_score": 0.030000000000000013,
+      "avg_factual_accuracy": 0.04333333333333334,
+      "avg_completeness": 0.006666666666666667,
+      "avg_relevance": 0.0033333333333333335,
+      "avg_coherence": 0.10000000000000003,
+      "sample_size": 30,
+      "details": [
+        {
+          "factual_accuracy": {
+            "score": 0.1,
+            "explanation": "1",
+            "dimension": "factual_accuracy"
+          },
+          "completeness": {
+            "score": 0.0,
+            "explanation": "0",
+            "dimension": "completeness"
+          },
+          "relevance": {
+            "score": 0.0,
+            "explanation": "0",
+            "dimension": "relevance"
+          },
+          "coherence": {
+            "score": 0.1,
+            "explanation": "1",
+            "dimension": "coherence"
+          },
+          "overall_score": 0.05000000000000001
+        },
+        {
+          "factual_accuracy": {
+            "score": 0.0,
+            "explanation": "0",
+            "dimension": "factual_accuracy"
+          },
+          "completeness": {
+            "score": 0.0,
+            "explanation": "0",
+            "dimension": "completeness"
+          },
+          "relevance": {
+            "score": 0.0,
+            "explanation": "0",
+            "dimension": "relevance"
+          },
+          "coherence": {
+            "score": 0.1,
+            "explanation": "1",
+            "dimension": "coherence"
+          },
+          "overall_score": 0.010000000000000002
+        },
+        {
+          "factual_accuracy": {
+            "score": 0.1,
+            "explanation": "1",
+            "dimension": "factual_accuracy"
+          },
+          "completeness": {
+            "score": 0.0,
+            "explanation": "0",
+            "dimension": "completeness"
+          },
+          "relevance": {
+            "score": 0.1,
+            "explanation": "1",
+            "dimension": "relevance"
+          },
+          "coherence": {
+            "score": 0.1,
+            "explanation": "1",
+            "dimension": "coherence"
+          },
+          "overall_score": 0.07
+        },
+        {
+          "factual_accuracy": {
+            "score": 0.0,
+            "explanation": "0",
+            "dimension": "factual_accuracy"
+          },
+          "completeness": {
+            "score": 0.0,
+            "explanation": "0",
+            "dimension": "completeness"
+          },
+          "relevance": {
+            "score": 0.0,
+            "explanation": "0",
+            "dimension": "relevance"
+          },
+          "coherence": {
+            "score": 0.1,
+            "explanation": "1",
+            "dimension": "coherence"
+          },
+          "overall_score": 0.010000000000000002
+        },
+        {
+          "factual_accuracy": {
+            "score": 0.0,
+            "explanation": "0",
+            "dimension": "factual_accuracy"
+          },
+          "completeness": {
+            "score": 0.0,
+            "explanation": "0",
+            "dimension": "completeness"
+          },
+          "relevance": {
+            "score": 0.0,
+            "explanation": "0",
+            "dimension": "relevance"
+          },
+          "coherence": {
+            "score": 0.1,
+            "explanation": "1",
+            "dimension": "coherence"
+          },
+          "overall_score": 0.010000000000000002
+        }
+      ]
+    },
+    "adversarial_testing": {
+      "paraphrasing_robustness": {
+        "avg_paraphrase_consistency": 0.0,
+        "consistency_scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "interpretation": "System shows 0.0% consistency on paraphrased questions. Higher is better (>70% is good)."
+      },
+      "unanswerable_detection": {
+        "hallucination_rate": 0.0,
+        "tested_questions": 10,
+        "hallucinations_detected": 0,
+        "results": [],
+        "interpretation": "System hallucinates 0.0% of the time on unanswerable questions. Lower is better (<20% is good)."
+      }
+    },
+    "confidence_calibration": {
+      "brier_score": 0.009999999999999997,
+      "expected_calibration_error": 0.09999999999999981,
+      "calibration_curve": {
+        "prob_true": [
+          0.0
+        ],
+        "prob_pred": [
+          0.09999999999999981
+        ]
+      },
+      "interpretation": "Brier Score: 0.0100 (lower is better, 0 is perfect). ECE: 0.1000 (lower is better, 0 is perfect calibration).",
+      "confidences": [
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "correctness": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "hallucination_detection": {
+      "avg_hallucination_rate": 0.0,
+      "total_hallucinations": 0,
+      "hallucination_percentage": 0.0,
+      "interpretation": "Average hallucination rate: 0.0%. 0 out of 100 answers likely contain hallucinated entities.",
+      "details": [
+        {
+          "hallucination_score": 0.0,
+          "hallucinated_entities": [],
+          "total_entities": 0,
+          "is_hallucinated": false
+        },
+        {
+          "hallucination_score": 0.0,
+          "hallucinated_entities": [],
+          "total_entities": 0,
+          "is_hallucinated": false
+        },
+        {
+          "hallucination_score": 0.0,
+          "hallucinated_entities": [],
+          "total_entities": 0,
+          "is_hallucinated": false
+        },
+        {
+          "hallucination_score": 0.0,
+          "hallucinated_entities": [],
+          "total_entities": 0,
+          "is_hallucinated": false
+        },
+        {
+          "hallucination_score": 0.0,
+          "hallucinated_entities": [],
+          "total_entities": 0,
+          "is_hallucinated": false
+        },
+        {
+          "hallucination_score": 0.0,
+          "hallucinated_entities": [],
+          "total_entities": 0,
+          "is_hallucinated": false
+        },
+        {
+          "hallucination_score": 0.0,
+          "hallucinated_entities": [],
+          "total_entities": 0,
+          "is_hallucinated": false
+        },
+        {
+          "hallucination_score": 0.0,
+          "hallucinated_entities": [],
+          "total_entities": 0,
+          "is_hallucinated": false
+        },
+        {
+          "hallucination_score": 0.0,
+          "hallucinated_entities": [],
+          "total_entities": 0,
+          "is_hallucinated": false
+        },
+        {
+          "hallucination_score": 0.0,
+          "hallucinated_entities": [],
+          "total_entities": 0,
+          "is_hallucinated": false
+        }
+      ]
+    },
+    "contextual_metrics": {
+      "avg_contextual_precision": 0.0,
+      "avg_contextual_recall": 0.0,
+      "contextual_f1": 0,
+      "interpretation": "Contextual Precision: 0.000 (fraction of retrieved chunks that are relevant). Contextual Recall: 0.000 (fraction of relevant chunks that were retrieved)."
+    }
+  },
+  "additional_metrics": {
+    "entity_coverage": {
+      "metric_name": "Entity Coverage",
+      "avg_coverage": 0.37,
+      "coverage_scores": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "details": [
+        {
+          "question_id": "Q001",
+          "coverage": 0.0,
+          "gt_entities": [
+            "the delaware sports hall of fame"
+          ],
+          "gen_entities": [],
+          "covered_entities": [],
+          "missing_entities": [
+            "the delaware sports hall of fame"
+          ]
+        },
+        {
+          "question_id": "Q002",
+          "coverage": 0.0,
+          "gt_entities": [
+            "armesocarb"
+          ],
+          "gen_entities": [],
+          "covered_entities": [],
+          "missing_entities": [
+            "armesocarb"
+          ]
+        },
+        {
+          "question_id": "Q003",
+          "coverage": 0.0,
+          "gt_entities": [
+            "nnpa award"
+          ],
+          "gen_entities": [],
+          "covered_entities": [],
+          "missing_entities": [
+            "nnpa award"
+          ]
+        },
+        {
+          "question_id": "Q004",
+          "coverage": 1.0,
+          "gt_entities": [],
+          "gen_entities": [],
+          "covered_entities": [],
+          "missing_entities": []
+        },
+        {
+          "question_id": "Q005",
+          "coverage": 0.0,
+          "gt_entities": [
+            "modern continental construction"
+          ],
+          "gen_entities": [],
+          "covered_entities": [],
+          "missing_entities": [
+            "modern continental construction"
+          ]
+        },
+        {
+          "question_id": "Q006",
+          "coverage": 0.0,
+          "gt_entities": [
+            "southern india"
+          ],
+          "gen_entities": [],
+          "covered_entities": [],
+          "missing_entities": [
+            "southern india"
+          ]
+        },
+        {
+          "question_id": "Q007",
+          "coverage": 0.0,
+          "gt_entities": [
+            "1949"
+          ],
+          "gen_entities": [],
+          "covered_entities": [],
+          "missing_entities": [
+            "1949"
+          ]
+        },
+        {
+          "question_id": "Q008",
+          "coverage": 0.0,
+          "gt_entities": [
+            "alec douglas-home"
+          ],
+          "gen_entities": [],
+          "covered_entities": [],
+          "missing_entities": [
+            "alec douglas-home"
+          ]
+        },
+        {
+          "question_id": "Q009",
+          "coverage": 1.0,
+          "gt_entities": [],
+          "gen_entities": [],
+          "covered_entities": [],
+          "missing_entities": []
+        },
+        {
+          "question_id": "Q010",
+          "coverage": 1.0,
+          "gt_entities": [],
+          "gen_entities": [],
+          "covered_entities": [],
+          "missing_entities": []
+        }
+      ],
+      "justification": "Entity Coverage measures what percentage of key entities (names, places, dates) from ground truth are present in generated answers, ensuring factual completeness.",
+      "calculation": "Coverage = |entities_generated \u2229 entities_ground_truth| / |entities_ground_truth|",
+      "interpretation": "Average coverage of 0.370 indicates needs improvement entity coverage. Higher scores mean generated answers contain more key facts from ground truth."
+    },
+    "answer_diversity": {
+      "metric_name": "Answer Diversity",
+      "diversity_score": 0.0,
+      "type_token_ratio": 0,
+      "unique_bigrams_ratio": 0,
+      "unique_trigrams_ratio": 0,
+      "avg_length": 0.0,
+      "length_std": 0.0,
+      "justification": "Answer Diversity ensures the system generates varied responses adapted to each question rather than repetitive templates.",
+      "calculation": "Diversity = 0.4*TTR + 0.3*unique_bigrams + 0.2*unique_trigrams + 0.1*length_variation",
+      "interpretation": "Diversity score of 0.000 indicates low answer diversity. Higher scores mean less repetitive answers."
+    },
+    "faithfulness": {
+      "metric_name": "Faithfulness (Answer Grounding)",
+      "avg_faithfulness": 0.5,
+      "faithfulness_scores": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "details": [
+        {
+          "question_id": "Q001",
+          "faithfulness": 0.5,
+          "key_content_count": 0,
+          "grounded_count": 0,
+          "ungrounded_examples": []
+        },
+        {
+          "question_id": "Q002",
+          "faithfulness": 0.5,
+          "key_content_count": 0,
+          "grounded_count": 0,
+          "ungrounded_examples": []
+        },
+        {
+          "question_id": "Q003",
+          "faithfulness": 0.5,
+          "key_content_count": 0,
+          "grounded_count": 0,
+          "ungrounded_examples": []
+        },
+        {
+          "question_id": "Q004",
+          "faithfulness": 0.5,
+          "key_content_count": 0,
+          "grounded_count": 0,
+          "ungrounded_examples": []
+        },
+        {
+          "question_id": "Q005",
+          "faithfulness": 0.5,
+          "key_content_count": 0,
+          "grounded_count": 0,
+          "ungrounded_examples": []
+        },
+        {
+          "question_id": "Q006",
+          "faithfulness": 0.5,
+          "key_content_count": 0,
+          "grounded_count": 0,
+          "ungrounded_examples": []
+        },
+        {
+          "question_id": "Q007",
+          "faithfulness": 0.5,
+          "key_content_count": 0,
+          "grounded_count": 0,
+          "ungrounded_examples": []
+        },
+        {
+          "question_id": "Q008",
+          "faithfulness": 0.5,
+          "key_content_count": 0,
+          "grounded_count": 0,
+          "ungrounded_examples": []
+        },
+        {
+          "question_id": "Q009",
+          "faithfulness": 0.5,
+          "key_content_count": 0,
+          "grounded_count": 0,
+          "ungrounded_examples": []
+        },
+        {
+          "question_id": "Q010",
+          "faithfulness": 0.5,
+          "key_content_count": 0,
+          "grounded_count": 0,
+          "ungrounded_examples": []
+        }
+      ],
+      "justification": "Faithfulness measures how well generated answers are grounded in retrieved context rather than hallucinated from model parameters. Critical for trustworthy RAG systems.",
+      "calculation": "Faithfulness = |answer_content_in_context| / |total_answer_content| where content includes entities and key noun phrases",
+      "interpretation": "Average faithfulness of 0.500 indicates poor grounding. Higher scores mean answers are better supported by retrieved context."
+    },
+    "difficulty_analysis": {
+      "metric_name": "Question Difficulty Analysis",
+      "difficulty_data": [
+        {
+          "question_id": "Q001",
+          "difficulty_score": 0.135,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q002",
+          "difficulty_score": 0.165,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q003",
+          "difficulty_score": 0.21,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q004",
+          "difficulty_score": 0.09,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q005",
+          "difficulty_score": 0.21,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q006",
+          "difficulty_score": 0.195,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q007",
+          "difficulty_score": 0.165,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q008",
+          "difficulty_score": 0.06,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q009",
+          "difficulty_score": 0.12,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q010",
+          "difficulty_score": 0.15,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q011",
+          "difficulty_score": 0.22499999999999998,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q012",
+          "difficulty_score": 0.09,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q013",
+          "difficulty_score": 0.12,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q014",
+          "difficulty_score": 0.165,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q015",
+          "difficulty_score": 0.12,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q016",
+          "difficulty_score": 0.135,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q017",
+          "difficulty_score": 0.165,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q018",
+          "difficulty_score": 0.21,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q019",
+          "difficulty_score": 0.165,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q020",
+          "difficulty_score": 0.09,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q021",
+          "difficulty_score": 0.27,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q022",
+          "difficulty_score": 0.255,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q023",
+          "difficulty_score": 0.18,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q024",
+          "difficulty_score": 0.045,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q025",
+          "difficulty_score": 0.105,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q026",
+          "difficulty_score": 0.09,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q027",
+          "difficulty_score": 0.18,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q028",
+          "difficulty_score": 0.165,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q029",
+          "difficulty_score": 0.135,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q030",
+          "difficulty_score": 0.15,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q031",
+          "difficulty_score": 0.255,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q032",
+          "difficulty_score": 0.22499999999999998,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q033",
+          "difficulty_score": 0.105,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q034",
+          "difficulty_score": 0.165,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q035",
+          "difficulty_score": 0.06,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q036",
+          "difficulty_score": 0.09,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q037",
+          "difficulty_score": 0.15,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q038",
+          "difficulty_score": 0.44999999999999996,
+          "difficulty_level": "medium",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q039",
+          "difficulty_score": 0.195,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q040",
+          "difficulty_score": 0.09,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q041",
+          "difficulty_score": 0.12,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q042",
+          "difficulty_score": 0.27,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q043",
+          "difficulty_score": 0.21,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q044",
+          "difficulty_score": 0.12,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q045",
+          "difficulty_score": 0.285,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q046",
+          "difficulty_score": 0.24,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q047",
+          "difficulty_score": 0.09,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q048",
+          "difficulty_score": 0.09,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q049",
+          "difficulty_score": 0.135,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q050",
+          "difficulty_score": 0.12,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q051",
+          "difficulty_score": 0.435,
+          "difficulty_level": "medium",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q052",
+          "difficulty_score": 0.12,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q053",
+          "difficulty_score": 0.435,
+          "difficulty_level": "medium",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q054",
+          "difficulty_score": 0.135,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q055",
+          "difficulty_score": 0.195,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q056",
+          "difficulty_score": 0.12,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q057",
+          "difficulty_score": 0.22499999999999998,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q058",
+          "difficulty_score": 0.105,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q059",
+          "difficulty_score": 0.09,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q060",
+          "difficulty_score": 0.195,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q061",
+          "difficulty_score": 0.12,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q062",
+          "difficulty_score": 0.105,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q063",
+          "difficulty_score": 0.27,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q064",
+          "difficulty_score": 0.195,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q065",
+          "difficulty_score": 0.09,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q066",
+          "difficulty_score": 0.105,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q067",
+          "difficulty_score": 0.105,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q068",
+          "difficulty_score": 0.09,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q069",
+          "difficulty_score": 0.135,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q070",
+          "difficulty_score": 0.105,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q071",
+          "difficulty_score": 0.165,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q072",
+          "difficulty_score": 0.12,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q073",
+          "difficulty_score": 0.51,
+          "difficulty_level": "medium",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q074",
+          "difficulty_score": 0.22499999999999998,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q075",
+          "difficulty_score": 0.285,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q076",
+          "difficulty_score": 0.255,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q077",
+          "difficulty_score": 0.135,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q078",
+          "difficulty_score": 0.12,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q079",
+          "difficulty_score": 0.285,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q080",
+          "difficulty_score": 0.135,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q081",
+          "difficulty_score": 0.165,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q082",
+          "difficulty_score": 0.135,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q083",
+          "difficulty_score": 0.135,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q084",
+          "difficulty_score": 0.15,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q085",
+          "difficulty_score": 0.22499999999999998,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q086",
+          "difficulty_score": 0.15,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q087",
+          "difficulty_score": 0.21,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q088",
+          "difficulty_score": 0.3,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q089",
+          "difficulty_score": 0.18,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "Q090",
+          "difficulty_score": 0.165,
+          "difficulty_level": "easy",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "MH001",
+          "difficulty_score": 0.655,
+          "difficulty_level": "medium",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "MH002",
+          "difficulty_score": 0.5800000000000001,
+          "difficulty_level": "medium",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "MH003",
+          "difficulty_score": 0.55,
+          "difficulty_level": "medium",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "MH004",
+          "difficulty_score": 0.505,
+          "difficulty_level": "medium",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "MH005",
+          "difficulty_score": 0.5650000000000001,
+          "difficulty_level": "medium",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "MH006",
+          "difficulty_score": 0.835,
+          "difficulty_level": "hard",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "MH007",
+          "difficulty_score": 0.47500000000000003,
+          "difficulty_level": "medium",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "MH008",
+          "difficulty_score": 0.655,
+          "difficulty_level": "medium",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "MH009",
+          "difficulty_score": 0.535,
+          "difficulty_level": "medium",
+          "retrieval_success": false,
+          "answer_quality": false
+        },
+        {
+          "question_id": "MH010",
+          "difficulty_score": 0.55,
+          "difficulty_level": "medium",
+          "retrieval_success": false,
+          "answer_quality": false
+        }
+      ],
+      "analysis_by_level": {
+        "easy": {
+          "count": 86,
+          "retrieval_success_rate": 0.0,
+          "answer_quality_rate": 0.0
+        },
+        "medium": {
+          "count": 13,
+          "retrieval_success_rate": 0.0,
+          "answer_quality_rate": 0.0
+        },
+        "hard": {
+          "count": 1,
+          "retrieval_success_rate": 0.0,
+          "answer_quality_rate": 0.0
+        }
+      },
+      "justification": "Difficulty analysis reveals how system performance varies with question complexity, enabling targeted improvements.",
+      "interpretation": "Found 86 easy, 13 medium, and 1 hard questions. Performance typically decreases with difficulty."
+    }
+  },
+  "parameter_sweep": {}
+}
