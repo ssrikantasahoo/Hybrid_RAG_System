@@ -15,10 +15,6 @@ A comprehensive Retrieval-Augmented Generation (RAG) system combining dense vect
 
 **Current Status**: System needs to be executed to generate all data files and evaluation results.
 
-**See also**:
-- [`START_HERE.md`](START_HERE.md) - Quick start guide
-- [`EXECUTE_NOW.md`](EXECUTE_NOW.md) - Detailed execution instructions
-- [`100_PERCENT_GUARANTEE.md`](100_PERCENT_GUARANTEE.md) - Complete validation
 
 ---
 
