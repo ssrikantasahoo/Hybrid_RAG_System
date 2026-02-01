@@ -2,22 +2,6 @@
 
 A comprehensive Retrieval-Augmented Generation (RAG) system combining dense vector retrieval, sparse keyword retrieval (BM25), and Reciprocal Rank Fusion (RRF) to answer questions from Wikipedia articles.
 
----
-
-## 🚀 FIRST TIME USERS - START HERE
-
-**If you're running this system for the first time**, follow these steps:
-
-1. **Read This First**: [`IMMEDIATE_ACTION_REQUIRED.md`](IMMEDIATE_ACTION_REQUIRED.md)
-2. **Quick Status Check**: Run `python check_status.py` to see what's missing
-3. **Execute System**: Run `python RUN_COMPLETE_SYSTEM.py` (takes 2-4 hours)
-4. **Verify**: Run `python VERIFY_SUBMISSION.py` to confirm 100% completion
-
-**Current Status**: System needs to be executed to generate all data files and evaluation results.
-
-
----
-
 ## 📋 Table of Contents
 
 - [Overview](#overview)
