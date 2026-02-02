@@ -186,8 +186,8 @@ class ParameterSweep:
 
         for rrf_k in tqdm(rrf_k_values, desc="RRF k values"):
             # Temporarily change RRF k constant
-            original_k = self.rag_pipeline.retriever.rrf.k_constant
-            self.rag_pipeline.retriever.rrf.k_constant = rrf_k
+            original_k = self.rag_pipeline.retriever.rrf.k
+            self.rag_pipeline.retriever.rrf.k = rrf_k
 
             retrieval_results = []
             generated_answers = []
@@ -216,7 +216,7 @@ class ParameterSweep:
             })
 
             # Restore original k
-            self.rag_pipeline.retriever.rrf.k_constant = original_k
+            self.rag_pipeline.retriever.rrf.k = original_k
 
         return {
             'parameter': 'RRF_k_constant',

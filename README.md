@@ -439,4 +439,5 @@ error_analysis = eval_pipeline.error_analysis(
 
 The 200 fixed URLs are stored in `data/fixed_urls.json`. These URLs remain constant across all runs to ensure reproducibility.
 
-**Note**: The fixed URLs will be automatically generated on first run if the file doesn't exist. Each group should ensure they have a unique set of 200 URLs.
+**Note**: `data/fixed_urls.json` must be prepared manually with your group's unique 200 URLs.  
+The execution script validates this file and does not auto-generate fixed URLs by default.

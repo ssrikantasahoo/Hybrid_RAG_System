@@ -102,55 +102,51 @@ class TextChunker:
         # Clean text
         text = self.preprocessor.clean_text(text)
 
-        # Split into sentences for better chunk boundaries
-        sentences = self.preprocessor.split_into_sentences(text)
+        # Token-based windowing enforces chunk lengths close to assignment bounds.
+        # For chunk_size=300 this yields [200, 400] token chunks with overlap=50.
+        all_tokens = self.encoding.encode(text)
+        if not all_tokens:
+            return []
 
-        chunks = []
-        current_chunk = []
-        current_tokens = 0
+        min_tokens = max(1, self.chunk_size - 100)   # 200 when chunk_size=300
+        max_tokens = self.chunk_size + 100           # 400 when chunk_size=300
+        step = max(1, self.chunk_size - self.overlap)
 
-        for sentence in sentences:
-            sentence_tokens = self.preprocessor.count_tokens(sentence)
+        token_chunks = []
+        start = 0
 
-            # If adding this sentence exceeds chunk size, save current chunk
-            if current_tokens + sentence_tokens > self.chunk_size and current_chunk:
-                chunk_text = ' '.join(current_chunk)
-                chunks.append(chunk_text)
+        while start < len(all_tokens):
+            end = min(start + self.chunk_size, len(all_tokens))
+            current = all_tokens[start:end]
 
-                # Calculate overlap
-                overlap_tokens = 0
-                overlap_sentences = []
+            # If this is a short tail, merge into previous when possible.
+            if len(current) < min_tokens and token_chunks:
+                merged = token_chunks[-1] + current
+                if len(merged) <= max_tokens:
+                    token_chunks[-1] = merged
+                else:
+                    # Keep last chunk within max bounds while preserving tail coverage.
+                    tail_start = max(0, len(all_tokens) - max_tokens)
+                    tail = all_tokens[tail_start:]
+                    if len(tail) >= min_tokens:
+                        token_chunks[-1] = tail
+                break
 
-                # Add sentences from the end until we reach overlap size
-                for sent in reversed(current_chunk):
-                    sent_tokens = self.preprocessor.count_tokens(sent)
-                    if overlap_tokens + sent_tokens <= self.overlap:
-                        overlap_sentences.insert(0, sent)
-                        overlap_tokens += sent_tokens
-                    else:
-                        break
+            token_chunks.append(current)
 
-                # Start new chunk with overlap
-                current_chunk = overlap_sentences
-                current_tokens = overlap_tokens
-
-            # Add sentence to current chunk
-            current_chunk.append(sentence)
-            current_tokens += sentence_tokens
-
-        # Add remaining chunk
-        if current_chunk:
-            chunk_text = ' '.join(current_chunk)
-            chunks.append(chunk_text)
+            if end == len(all_tokens):
+                break
+            start += step
 
         # Create chunk dictionaries with metadata
         chunk_dicts = []
-        for i, chunk_text in enumerate(chunks):
+        for i, token_chunk in enumerate(token_chunks):
+            chunk_text = self.encoding.decode(token_chunk)
             chunk_dict = {
                 'chunk_id': str(uuid.uuid4()),
                 'chunk_index': i,
                 'text': chunk_text,
-                'token_count': self.preprocessor.count_tokens(chunk_text),
+                'token_count': len(token_chunk),
                 **(metadata or {})
             }
             chunk_dicts.append(chunk_dict)

@@ -262,13 +262,18 @@ class RAGPipeline:
         retrieval_results = self.retriever.retrieve(
             question,
             top_k=top_k,
-            top_n=top_n
+            # Retrieve top_k fused results for evaluation metrics.
+            top_n=top_k
         )
+
+        # Use only top_n chunks for answer generation context.
+        generation_chunks = retrieval_results['fused_results'][:top_n]
+        retrieval_results['generation_chunks'] = generation_chunks
 
         # Generate answer
         generation_result = self.generator.generate(
             question,
-            retrieval_results['fused_results'],
+            generation_chunks,
             max_new_tokens=max_new_tokens
         )
 
@@ -339,4 +344,4 @@ if __name__ == "__main__":
     print("\nRAG Pipeline Result:")
     print(f"Question: {result['question']}")
     print(f"Answer: {result['answer']}")
-    print(f"\nNumber of chunks used: {len(result['retrieval_results']['fused_results'])}")
+    print(f"\nNumber of chunks used: {len(result['retrieval_results'].get('generation_chunks', []))}")

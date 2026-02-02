@@ -100,8 +100,21 @@ class ReportGenerator:
     def _metric(self, key: str, default=0.0):
         """Get metric value from either flat or nested result schema."""
         metrics = self.results.get('metrics', {})
+        
+        def _to_number(value):
+            if isinstance(value, (int, float)):
+                return float(value)
+            if isinstance(value, dict):
+                # Common shape: {"exact_match": 0.12}, {"recall_at_k": 0.34}, etc.
+                if key in value and isinstance(value.get(key), (int, float)):
+                    return float(value[key])
+                for candidate in value.values():
+                    if isinstance(candidate, (int, float)):
+                        return float(candidate)
+            return default
+
         if key in metrics:
-            return metrics.get(key, default)
+            return _to_number(metrics.get(key, default))
 
         legacy_map = {
             'mrr_url_level': ('mrr', 'mrr'),
@@ -115,7 +128,10 @@ class ReportGenerator:
         }
         if key in legacy_map:
             outer, inner = legacy_map[key]
-            return metrics.get(outer, {}).get(inner, default)
+            outer_value = metrics.get(outer, {})
+            if isinstance(outer_value, dict):
+                return _to_number(outer_value.get(inner, default))
+            return _to_number(outer_value)
 
         return default
 
@@ -405,9 +421,19 @@ Future improvements could focus on:
 """
             pdf.chapter_body(conclusions.strip())
 
-            # Save PDF
-            pdf.output(str(output_file))
-            logger.info(f"[OK] PDF report saved to {output_file}")
+            # Save PDF. On Windows, writing a locked/invalid target path can fail.
+            try:
+                pdf.output(str(output_file))
+                logger.info(f"[OK] PDF report saved to {output_file}")
+            except OSError as e:
+                fallback_file = self.output_dir / f"evaluation_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pdf"
+                logger.warning(
+                    f"Primary PDF path failed ({output_file}): {e}. "
+                    f"Saving to fallback path: {fallback_file}"
+                )
+                pdf.output(str(fallback_file))
+                output_file = fallback_file
+                logger.info(f"[OK] PDF report saved to fallback {output_file}")
             
             return output_file
             

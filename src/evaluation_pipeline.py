@@ -110,7 +110,7 @@ class EvaluationPipeline:
 
         # Custom metric 1: NDCG@K
         ndcg_results = self.metrics.normalized_discounted_cumulative_gain(
-            questions, retrieval_results, k=top_n
+            questions, retrieval_results, k=top_k
         )
 
         # Custom metric 2: BERTScore
@@ -119,8 +119,8 @@ class EvaluationPipeline:
         )
 
         # Additional metrics
-        precision_results = self.metrics.precision_at_k(questions, retrieval_results, k=top_n)
-        recall_results = self.metrics.recall_at_k(questions, retrieval_results, k=top_n)
+        precision_results = self.metrics.precision_at_k(questions, retrieval_results, k=top_k)
+        recall_results = self.metrics.recall_at_k(questions, retrieval_results, k=top_k)
         rouge_results = self.metrics.rouge_scores(questions, generated_answers)
         em_results = self.metrics.exact_match(questions, generated_answers)
 
@@ -517,18 +517,28 @@ class EvaluationPipeline:
     def create_results_csv(self, questions: List[Dict], results: Dict, output_file: Path):
         """Create detailed results CSV"""
         rows = []
+        metrics = results.get('metrics', {})
+        mrr_details = metrics.get('mrr', {}).get('details', [])
+        ndcg_details = metrics.get('ndcg', {}).get('details', [])
+        bert_details = metrics.get('bert_score', {}).get('details', [])
+        recalls = metrics.get('recall_at_k', {}).get('recalls', [])
+        ndcg_k = metrics.get('ndcg', {}).get('k', 5)
+        recall_k = metrics.get('recall_at_k', {}).get('k', 5)
+        response_times = results.get('response_times', [])
+        generated_answers = results.get('generated_answers', [])
 
         for i, question in enumerate(questions):
             row = {
                 'Question ID': question.get('question_id', ''),
-                'Question': question['question'],
+                'Question': question.get('question', ''),
                 'Question Type': question.get('question_type', ''),
-                'Ground Truth': question['answer'],
-                'Generated Answer': results['generated_answers'][i] if i < len(results['generated_answers']) else '',
-                'MRR': results['metrics']['mrr']['details'][i]['reciprocal_rank'] if i < len(results['metrics']['mrr']['details']) else 0,
-                'NDCG': results['metrics']['ndcg']['details'][i]['ndcg'] if i < len(results['metrics']['ndcg']['details']) else 0,
-                'BERTScore F1': results['metrics']['bert_score']['details'][i]['f1'] if i < len(results['metrics']['bert_score']['details']) else 0,
-                'Response Time (s)': results['response_times'][i] if i < len(results['response_times']) else 0
+                'Ground Truth': question.get('answer', ''),
+                'Generated Answer': generated_answers[i] if i < len(generated_answers) else '',
+                'MRR': mrr_details[i].get('reciprocal_rank', 0) if i < len(mrr_details) else 0,
+                f'NDCG@{ndcg_k}': ndcg_details[i].get('ndcg', 0) if i < len(ndcg_details) else 0,
+                f'Recall@{recall_k}': recalls[i] if i < len(recalls) else 0,
+                'BERTScore F1': bert_details[i].get('f1', 0) if i < len(bert_details) else 0,
+                'Response Time (s)': response_times[i] if i < len(response_times) else 0
             }
             rows.append(row)
 

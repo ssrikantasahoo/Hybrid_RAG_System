@@ -286,7 +286,13 @@ def main():
                 with metric_cols[0]:
                     st.metric("Response Time", f"{response_time:.2f}s")
                 with metric_cols[1]:
-                    st.metric("Chunks Used", len(result['retrieval_results']['fused_results']))
+                    st.metric(
+                        "Chunks Used",
+                        len(result['retrieval_results'].get(
+                            'generation_chunks',
+                            result['retrieval_results']['fused_results']
+                        ))
+                    )
                 with metric_cols[2]:
                     st.metric("Unique Chunks Retrieved", result['retrieval_results']['num_unique_chunks'])
                 with metric_cols[3]:
