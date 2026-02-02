@@ -172,14 +172,23 @@ class TextChunker:
         logger.info(f"Chunking {len(corpus)} documents...")
 
         for doc in tqdm(corpus, desc="Chunking documents"):
+            doc_text = doc.get('text') or doc.get('content')
+            if not doc_text:
+                logger.warning(
+                    "Skipping document missing text/content. url=%s title=%s",
+                    doc.get('url', 'unknown'),
+                    doc.get('title', 'unknown')
+                )
+                continue
+
             metadata = {
-                'url': doc['url'],
-                'title': doc['title'],
+                'url': doc.get('url', ''),
+                'title': doc.get('title', ''),
                 'source_type': doc.get('source_type', 'unknown'),
                 'doc_word_count': doc.get('word_count', 0)
             }
 
-            chunks = self.chunk_text(doc['text'], metadata)
+            chunks = self.chunk_text(doc_text, metadata)
             all_chunks.extend(chunks)
 
         logger.info(f"Created {len(all_chunks)} chunks from {len(corpus)} documents")

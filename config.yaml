@@ -1,5 +1,9 @@
 # Hybrid RAG System Configuration
 
+# Network Configuration
+network:
+  ssl_verify: true  
+
 # Dataset Configuration
 dataset:
   fixed_urls_count: 200

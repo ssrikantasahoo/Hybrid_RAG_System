@@ -14,32 +14,21 @@ from bs4 import BeautifulSoup
 from tqdm import tqdm
 import logging
 import urllib3
-import ssl
-import os
-from unittest.mock import patch
+import yaml
 
-# Disable SSL warnings and verification for corporate environments
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-os.environ['PYTHONHTTPSVERIFY'] = '0'
-os.environ['REQUESTS_CA_BUNDLE'] = ''
-os.environ['CURL_CA_BUNDLE'] = ''
-
-# Monkey patch ssl to disable verification globally
+# Load configuration
 try:
-    _create_unverified_https_context = ssl._create_unverified_context
-except AttributeError:
-    pass
-else:
-    ssl._create_default_https_context = _create_unverified_https_context
+    with open('config.yaml', 'r') as f:
+        config = yaml.safe_load(f)
+    SSL_VERIFY = config.get('network', {}).get('ssl_verify', True)
+except Exception:
+    SSL_VERIFY = True  # Default to secure
 
-# Monkey patch requests to disable SSL verification globally
-original_request = requests.Session.request
-
-def patched_request(self, method, url, **kwargs):
-    kwargs['verify'] = False
-    return original_request(self, method, url, **kwargs)
-
-requests.Session.request = patched_request
+# Only disable SSL warnings if SSL verification is disabled
+if not SSL_VERIFY:
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    logging.warning("SSL verification is DISABLED - This is not recommended for production!")
+    logging.warning("Set network.ssl_verify: true in config.yaml to enable SSL verification")
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -54,6 +43,7 @@ class WikipediaDataCollector:
             user_agent='HybridRAGSystem/1.0 (Educational Project)'
         )
         self.min_words = min_words
+        self.ssl_verify = SSL_VERIFY
 
     def get_random_wikipedia_urls(self, count: int, exclude_urls: List[str] = None) -> List[Dict]:
         """
@@ -64,7 +54,7 @@ class WikipediaDataCollector:
             exclude_urls: URLs to exclude from collection
 
         Returns:
-            List of dictionaries with URL, title, and content
+            List of dictionaries with URL, title, and text
         """
         exclude_urls = exclude_urls or []
         collected_urls = []
@@ -72,6 +62,7 @@ class WikipediaDataCollector:
         max_attempts = count * 10  # Prevent infinite loops
 
         logger.info(f"Collecting {count} random Wikipedia URLs...")
+        logger.info(f"SSL Verification: {'ENABLED' if self.ssl_verify else 'DISABLED'}")
 
         # Use Wikipedia API to get random articles
         while len(collected_urls) < count and attempts < max_attempts:
@@ -91,191 +82,135 @@ class WikipediaDataCollector:
                     'User-Agent': 'HybridRAGSystem/1.0 (Educational Project; Python/requests)'
                 }
 
-                response = requests.get(api_url, params=params, headers=headers, verify=False)
+                response = requests.get(
+                    api_url,
+                    params=params,
+                    headers=headers,
+                    verify=self.ssl_verify,
+                    timeout=10
+                )
                 data = response.json()
 
                 if 'query' not in data or 'random' not in data['query']:
                     continue
 
                 random_page = data['query']['random'][0]
-                title = random_page['title']
-                page_id = random_page['id']
-                url = f"https://en.wikipedia.org/wiki/{title.replace(' ', '_')}"
+                page_title = random_page['title']
 
-                # Skip if already collected or excluded
-                if url in exclude_urls or any(u['url'] == url for u in collected_urls):
-                    continue
-
-                # Get article content
-                page = self.wiki.page(title)
+                # Get full page content
+                page = self.wiki.page(page_title)
 
                 if not page.exists():
                     continue
 
-                # Check word count
+                # Get text content
                 text = page.text
                 word_count = len(text.split())
 
-                if word_count >= self.min_words:
-                    collected_urls.append({
-                        'url': url,
-                        'title': page.title,
-                        'text': text,
-                        'word_count': word_count
-                    })
-                    logger.info(f"Collected {len(collected_urls)}/{count}: {page.title} ({word_count} words)")
+                if word_count < self.min_words:
+                    continue
 
-                # Rate limiting
-                time.sleep(0.5)
+                page_url = page.fullurl
+
+                # Skip if in exclude list
+                if page_url in exclude_urls or page_url in [u['url'] for u in collected_urls]:
+                    continue
+
+                collected_urls.append({
+                    'url': page_url,
+                    'title': page_title,
+                    'text': text,
+                    # Backward-compatible alias for any older code paths.
+                    'content': text,
+                    'word_count': word_count
+                })
+
+                if len(collected_urls) % 50 == 0:
+                    logger.info(f"  Progress: {len(collected_urls)}/{count}")
 
             except Exception as e:
-                logger.warning(f"Error collecting article: {e}")
+                logger.debug(f"Error fetching random article: {e}")
                 continue
 
-        if len(collected_urls) < count:
-            logger.warning(f"Only collected {len(collected_urls)} out of {count} requested URLs")
-
+        logger.info(f"[OK] Collected {len(collected_urls)} random URLs")
         return collected_urls
 
     def get_article_from_url(self, url: str) -> Dict:
         """
-        Fetch article content from a specific Wikipedia URL
+        Get article content from Wikipedia URL
 
         Args:
-            url: Wikipedia article URL
+            url: Wikipedia URL
 
         Returns:
-            Dictionary with article data
+            Dictionary with URL, title, and text
         """
         try:
             # Extract title from URL
-            title = url.split("/wiki/")[-1].replace("_", " ")
+            title = url.split('/wiki/')[-1].replace('_', ' ')
 
-            # Get article content
+            # Get page
             page = self.wiki.page(title)
 
             if not page.exists():
-                logger.error(f"Page does not exist: {url}")
+                logger.warning(f"Page does not exist: {title}")
                 return None
 
             text = page.text
             word_count = len(text.split())
 
             if word_count < self.min_words:
-                logger.warning(f"Article too short ({word_count} words): {title}")
+                logger.warning(f"Page too short ({word_count} words): {title}")
                 return None
 
             return {
                 'url': url,
-                'title': page.title,
+                'title': title,
                 'text': text,
+                # Backward-compatible alias for any older code paths.
+                'content': text,
                 'word_count': word_count
             }
 
         except Exception as e:
-            logger.error(f"Error fetching article {url}: {e}")
+            logger.error(f"Error fetching article from {url}: {e}")
             return None
 
-    def create_fixed_urls_set(self, count: int, output_file: str) -> List[str]:
+    def create_fixed_urls_set(self, count: int = 200, output_file: str = None) -> List[str]:
         """
-        Create and save a fixed set of Wikipedia URLs
+        Create a fixed set of Wikipedia URLs
 
         Args:
-            count: Number of URLs to collect
-            output_file: Path to save the URLs
+            count: Number of URLs to generate
+            output_file: Optional file to save URLs
 
         Returns:
-            List of URLs
+            List of Wikipedia URLs
         """
-        logger.info(f"Creating fixed URL set of {count} articles...")
+        logger.info(f"Generating {count} fixed Wikipedia URLs...")
 
-        articles = self.get_random_wikipedia_urls(count)
-
-        # Extract just the URLs
+        articles = self.get_random_wikipedia_urls(count=count)
         urls = [article['url'] for article in articles]
 
-        # Save to JSON file
-        Path(output_file).parent.mkdir(parents=True, exist_ok=True)
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(urls, f, indent=2)
-
-        logger.info(f"Saved {len(urls)} fixed URLs to {output_file}")
+        if output_file:
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(urls, f, indent=2, ensure_ascii=False)
+            logger.info(f"[OK] Saved {len(urls)} URLs to {output_file}")
 
         return urls
 
-    def load_fixed_urls(self, file_path: str) -> List[str]:
-        """Load fixed URLs from JSON file"""
-        with open(file_path, 'r', encoding='utf-8') as f:
-            return json.load(f)
 
-    def collect_corpus(self, fixed_urls_file: str, random_count: int) -> List[Dict]:
-        """
-        Collect complete corpus: fixed URLs + random URLs
+def main():
+    """Test data collection"""
+    collector = WikipediaDataCollector(min_words=200)
 
-        Args:
-            fixed_urls_file: Path to fixed URLs JSON file
-            random_count: Number of additional random URLs
+    # Test with a few random URLs
+    logger.info("Testing data collection...")
+    urls = collector.get_random_wikipedia_urls(count=5)
 
-        Returns:
-            List of article dictionaries
-        """
-        corpus = []
-
-        # Load and fetch fixed URLs
-        logger.info("Loading fixed URLs...")
-        if Path(fixed_urls_file).exists():
-            fixed_urls = self.load_fixed_urls(fixed_urls_file)
-        else:
-            logger.info("Fixed URLs file not found. Creating new one...")
-            fixed_urls = self.create_fixed_urls_set(200, fixed_urls_file)
-
-        logger.info(f"Fetching {len(fixed_urls)} fixed articles...")
-        for url in tqdm(fixed_urls, desc="Fixed URLs"):
-            article = self.get_article_from_url(url)
-            if article:
-                article['source_type'] = 'fixed'
-                corpus.append(article)
-            time.sleep(0.5)
-
-        # Collect random URLs
-        logger.info(f"Collecting {random_count} random articles...")
-        random_articles = self.get_random_wikipedia_urls(
-            random_count,
-            exclude_urls=fixed_urls
-        )
-
-        for article in random_articles:
-            article['source_type'] = 'random'
-            corpus.append(article)
-
-        logger.info(f"Total corpus size: {len(corpus)} articles")
-
-        return corpus
-
-    def save_corpus(self, corpus: List[Dict], output_file: str):
-        """Save corpus to JSON file"""
-        Path(output_file).parent.mkdir(parents=True, exist_ok=True)
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(corpus, f, indent=2, ensure_ascii=False)
-        logger.info(f"Saved corpus to {output_file}")
-
-    def load_corpus(self, file_path: str) -> List[Dict]:
-        """Load corpus from JSON file"""
-        with open(file_path, 'r', encoding='utf-8') as f:
-            return json.load(f)
+    for url_data in urls:
+        logger.info(f"  {url_data['title']}: {url_data['word_count']} words")
 
 
 if __name__ == "__main__":
-    # Example usage
-    collector = WikipediaDataCollector(min_words=200)
-
-    # Create fixed URLs if needed
-    fixed_urls_file = "data/fixed_urls.json"
-    if not Path(fixed_urls_file).exists():
-        collector.create_fixed_urls_set(200, fixed_urls_file)
-
-    # Collect full corpus
-    corpus = collector.collect_corpus(fixed_urls_file, random_count=300)
-
-    # Save corpus
-    collector.save_corpus(corpus, "data/raw_corpus.json")
+    main()

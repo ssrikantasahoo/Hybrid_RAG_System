@@ -85,6 +85,7 @@ This project implements a state-of-the-art hybrid RAG system that:
               │   Generated Answer   │
               └──────────────────────┘
 ```
+![Hybrid RAG Architecture](outputs/architecture_diagram.png)
 
 ## 🚀 Installation
 
@@ -132,7 +133,17 @@ python -m spacy download en_core_web_sm
 python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
 
 # 2. Run the complete system
+# Use existing data (if available)
 python RUN_COMPLETE_SYSTEM.py
+
+# Force fresh rebuild (runs full pipeline end-to-end)
+python RUN_COMPLETE_SYSTEM.py --force-rebuild
+
+# Regenerate PDF report only (fast; uses existing outputs/evaluation_results.json)
+python RUN_COMPLETE_SYSTEM.py --report-only
+
+# Get help
+python RUN_COMPLETE_SYSTEM.py --help
 ```
 
 This will:
@@ -145,14 +156,13 @@ This will:
 
 **Estimated time**: 2-4 hours (depending on hardware)
 
-### Run Evaluation Only
 
-If you already have the system built (indices and data generated) and just want to re-run evaluation:
+### Full Rebuild Mode
+
+Use this when you need fresh random URLs and a full end-to-end rerun:
 
 ```bash
-# RUN_COMPLETE_SYSTEM.py automatically detects existing data
-# and skips generation steps if data exists.
-python RUN_COMPLETE_SYSTEM.py
+python RUN_COMPLETE_SYSTEM.py --force-rebuild
 ```
 
 ### Launch Web Interface
@@ -430,51 +440,3 @@ error_analysis = eval_pipeline.error_analysis(
 The 200 fixed URLs are stored in `data/fixed_urls.json`. These URLs remain constant across all runs to ensure reproducibility.
 
 **Note**: The fixed URLs will be automatically generated on first run if the file doesn't exist. Each group should ensure they have a unique set of 200 URLs.
-
-## 🤝 Contributing
-
-To contribute to this project:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## 📄 License
-
-This project is for educational purposes as part of the course assignment.
-
-## 🙏 Acknowledgments
-
-- Wikipedia for providing open-access knowledge
-- HuggingFace for transformer models
-- Anthropic for Claude API (if used)
-- Open-source community for libraries
-
-## 📞 Support
-
-For questions or issues:
-- Check the documentation
-- Review error logs in `logs/`
-- Verify configuration in `config.yaml`
-
-## 🎓 Assignment Compliance
-
-This implementation satisfies all assignment requirements:
-
-✅ **Dataset**: 200 fixed + 300 random Wikipedia URLs
-✅ **Dense Retrieval**: Sentence transformers + FAISS
-✅ **Sparse Retrieval**: BM25 implementation
-✅ **RRF**: Reciprocal Rank Fusion (k=60)
-✅ **Generation**: Open-source LLM (FLAN-T5)
-✅ **UI**: Streamlit interface
-✅ **Question Generation**: 100 diverse Q&A pairs
-✅ **Mandatory Metric**: MRR at URL level
-✅ **Custom Metrics**: NDCG@K and BERTScore
-✅ **Innovation**: Ablation studies, error analysis, visualizations
-✅ **Automation**: Single-command pipeline
-✅ **Documentation**: Comprehensive README and code comments
-
----
-
-**Built with ❤️ for Hybrid RAG System Assignment**

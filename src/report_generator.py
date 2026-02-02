@@ -87,8 +87,8 @@ class ReportGenerator:
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
-        # Load results
-        with open(results_file, 'r') as f:
+        # Load results using UTF-8 to avoid Windows cp1252 decode issues.
+        with open(results_file, 'r', encoding='utf-8') as f:
             self.results = json.load(f)
 
     def sanitize(self, text):
@@ -96,6 +96,28 @@ class ReportGenerator:
         if not isinstance(text, str):
             return str(text)
         return text.encode('latin-1', 'replace').decode('latin-1')
+
+    def _metric(self, key: str, default=0.0):
+        """Get metric value from either flat or nested result schema."""
+        metrics = self.results.get('metrics', {})
+        if key in metrics:
+            return metrics.get(key, default)
+
+        legacy_map = {
+            'mrr_url_level': ('mrr', 'mrr'),
+            'ndcg_at_5': ('ndcg', 'ndcg'),
+            'bert_score_f1': ('bert_score', 'bert_score_f1'),
+            'rouge1': ('rouge', 'rouge1'),
+            'rouge2': ('rouge', 'rouge2'),
+            'rougeL': ('rouge', 'rougeL'),
+            'exact_match': ('exact_match', 'exact_match'),
+            'recall_at_5': ('recall_at_k', 'recall_at_k')
+        }
+        if key in legacy_map:
+            outer, inner = legacy_map[key]
+            return metrics.get(outer, {}).get(inner, default)
+
+        return default
 
     def generate_pdf_report(self, output_file: str = None):
         """
@@ -111,6 +133,11 @@ class ReportGenerator:
 
         try:
             pdf = PDFReport()
+            avg_response_time = self.results.get('avg_response_time', self._metric('avg_response_time', 0.0))
+            num_questions = self.results.get('num_questions', 0)
+            num_errors = self.results.get('num_errors')
+            if num_errors is None:
+                num_errors = max(0, num_questions - self.results.get('num_successful', num_questions))
             
             # Title Page
             pdf.add_page()
@@ -130,9 +157,9 @@ This report presents the evaluation results of the Hybrid RAG System, which comb
 dense vector retrieval, sparse keyword retrieval (BM25), and Reciprocal Rank Fusion (RRF)
 to answer questions from Wikipedia articles.
 
-Total Questions Evaluated: {self.results['num_questions']}
-Average Response Time: {self.results['avg_response_time']:.3f} seconds
-Number of Errors: {self.results.get('num_errors', 0)}
+Total Questions Evaluated: {num_questions}
+Average Response Time: {avg_response_time:.3f} seconds
+Number of Errors: {num_errors}
 
 The system demonstrates strong performance across multiple evaluation metrics, with
 particularly notable results in hybrid retrieval combining dense and sparse methods.
@@ -182,11 +209,11 @@ where rank_i is the position of the first correct URL for question i.
             pdf.multi_cell(190, 6, self.sanitize(mrr_info.strip()))
             pdf.ln(2)
 
-            mrr_value = self.results['metrics']['mrr']['mrr']
+            mrr_value = self._metric('mrr_url_level', 0.0)
             pdf.add_metric_box(
                 'MRR Score',
                 f"{mrr_value:.4f}",
-                self.results['metrics']['mrr']['interpretation']
+                "Higher is better. Values closer to 1 mean correct URLs are ranked earlier."
             )
 
             # Custom Metric 1: NDCG
@@ -198,18 +225,18 @@ where rank_i is the position of the first correct URL for question i.
 NDCG (Normalized Discounted Cumulative Gain) evaluates ranking quality by considering
 both relevance and position.
 
-Justification: {self.results['metrics']['ndcg']['justification']}
+Justification: NDCG measures ranking quality with higher weight for top-ranked relevant results.
 
-Calculation: {self.results['metrics']['ndcg']['calculation']}
+Calculation: NDCG@K = DCG@K / IDCG@K
 """
             pdf.multi_cell(190, 6, self.sanitize(ndcg_info.strip()))
             pdf.ln(2)
 
-            ndcg_value = self.results['metrics']['ndcg']['ndcg']
+            ndcg_value = self._metric('ndcg_at_5', 0.0)
             pdf.add_metric_box(
-                f"NDCG@{self.results['metrics']['ndcg']['k']} Score",
+                "NDCG@5 Score",
                 f"{ndcg_value:.4f}",
-                self.results['metrics']['ndcg']['interpretation']
+                "Higher is better. Values closer to 1 indicate better ranking quality."
             )
 
             # Custom Metric 2: BERTScore
@@ -224,18 +251,18 @@ Calculation: {self.results['metrics']['ndcg']['calculation']}
 BERTScore measures semantic similarity between generated and ground truth answers
 using contextual embeddings.
 
-Justification: {self.results['metrics']['bert_score']['justification']}
+Justification: BERTScore evaluates semantic similarity between generated and reference answers.
 
-Calculation: {self.results['metrics']['bert_score']['calculation']}
+Calculation: Uses contextual embedding similarity (precision, recall, F1).
 """
             pdf.multi_cell(190, 6, self.sanitize(bert_info.strip()))
             pdf.ln(2)
 
-            bert_value = self.results['metrics']['bert_score']['bert_score_f1']
+            bert_value = self._metric('bert_score_f1', 0.0)
             pdf.add_metric_box(
                 'BERTScore F1',
                 f"{bert_value:.4f}",
-                self.results['metrics']['bert_score']['interpretation']
+                "Higher is better. Indicates stronger semantic alignment with reference answers."
             )
 
             # Ablation Study
@@ -255,29 +282,32 @@ validating the system design.
             pdf.chapter_body(ablation_text.strip())
 
             # Ablation Results Table
-            pdf.set_font('Arial', 'B', 11)
-            pdf.cell(60, 8, 'Method', 1, 0, 'C')
-            pdf.cell(60, 8, 'MRR', 1, 0, 'C')
-            pdf.cell(60, 8, 'NDCG', 1, 1, 'C')
+            ablation = self.results.get('ablation_study')
+            if ablation:
+                pdf.set_font('Arial', 'B', 11)
+                pdf.cell(60, 8, 'Method', 1, 0, 'C')
+                pdf.cell(60, 8, 'MRR', 1, 0, 'C')
+                pdf.cell(60, 8, 'NDCG', 1, 1, 'C')
 
-            pdf.set_font('Arial', '', 11)
-            ablation = self.results['ablation_study']
+                pdf.set_font('Arial', '', 11)
+                # Dense only
+                pdf.cell(60, 8, 'Dense Only', 1, 0, 'L')
+                pdf.cell(60, 8, f"{ablation['dense_only']['mrr']:.4f}", 1, 0, 'C')
+                pdf.cell(60, 8, f"{ablation['dense_only']['ndcg']:.4f}", 1, 1, 'C')
 
-            # Dense only
-            pdf.cell(60, 8, 'Dense Only', 1, 0, 'L')
-            pdf.cell(60, 8, f"{ablation['dense_only']['mrr']:.4f}", 1, 0, 'C')
-            pdf.cell(60, 8, f"{ablation['dense_only']['ndcg']:.4f}", 1, 1, 'C')
+                # Sparse only
+                pdf.cell(60, 8, 'Sparse Only', 1, 0, 'L')
+                pdf.cell(60, 8, f"{ablation['sparse_only']['mrr']:.4f}", 1, 0, 'C')
+                pdf.cell(60, 8, f"{ablation['sparse_only']['ndcg']:.4f}", 1, 1, 'C')
 
-            # Sparse only
-            pdf.cell(60, 8, 'Sparse Only', 1, 0, 'L')
-            pdf.cell(60, 8, f"{ablation['sparse_only']['mrr']:.4f}", 1, 0, 'C')
-            pdf.cell(60, 8, f"{ablation['sparse_only']['ndcg']:.4f}", 1, 1, 'C')
-
-            # Hybrid
-            pdf.set_font('Arial', 'B', 11)
-            pdf.cell(60, 8, 'Hybrid (RRF)', 1, 0, 'L')
-            pdf.cell(60, 8, f"{ablation['hybrid_rrf']['mrr']:.4f}", 1, 0, 'C')
-            pdf.cell(60, 8, f"{ablation['hybrid_rrf']['ndcg']:.4f}", 1, 1, 'C')
+                # Hybrid
+                pdf.set_font('Arial', 'B', 11)
+                pdf.cell(60, 8, 'Hybrid (RRF)', 1, 0, 'L')
+                pdf.cell(60, 8, f"{ablation['hybrid_rrf']['mrr']:.4f}", 1, 0, 'C')
+                pdf.cell(60, 8, f"{ablation['hybrid_rrf']['ndcg']:.4f}", 1, 1, 'C')
+            else:
+                pdf.set_font('Arial', '', 11)
+                pdf.multi_cell(190, 6, self.sanitize("Ablation study data not available in this result file."))
 
             pdf.ln(5)
 
@@ -294,20 +324,35 @@ Errors were categorized as:
             pdf.chapter_body(error_text.strip())
 
             # Error table
-            errors_by_type = self.results['error_analysis']['errors_by_type']
+            error_analysis = self.results.get('error_analysis', {})
+            errors_by_type = error_analysis.get('errors_by_type')
+            if errors_by_type:
+                pdf.set_font('Arial', 'B', 10)
+                pdf.cell(50, 8, 'Question Type', 1, 0, 'C')
+                pdf.cell(35, 8, 'Total', 1, 0, 'C')
+                pdf.cell(50, 8, 'Retrieval Fails', 1, 0, 'C')
+                pdf.cell(50, 8, 'Generation Fails', 1, 1, 'C')
 
-            pdf.set_font('Arial', 'B', 10)
-            pdf.cell(50, 8, 'Question Type', 1, 0, 'C')
-            pdf.cell(35, 8, 'Total', 1, 0, 'C')
-            pdf.cell(50, 8, 'Retrieval Fails', 1, 0, 'C')
-            pdf.cell(50, 8, 'Generation Fails', 1, 1, 'C')
+                pdf.set_font('Arial', '', 10)
+                for q_type, errors in errors_by_type.items():
+                    pdf.cell(50, 8, self.sanitize(q_type.capitalize()), 1, 0, 'L')
+                    pdf.cell(35, 8, str(errors.get('total', 0)), 1, 0, 'C')
+                    pdf.cell(50, 8, str(errors.get('retrieval_failures', 0)), 1, 0, 'C')
+                    pdf.cell(50, 8, str(errors.get('generation_failures', 0)), 1, 1, 'C')
+            else:
+                by_type = error_analysis.get('by_question_type', {})
+                pdf.set_font('Arial', 'B', 10)
+                pdf.cell(50, 8, 'Question Type', 1, 0, 'C')
+                pdf.cell(35, 8, 'Count', 1, 0, 'C')
+                pdf.cell(50, 8, 'Avg MRR', 1, 0, 'C')
+                pdf.cell(50, 8, 'Avg Recall', 1, 1, 'C')
 
-            pdf.set_font('Arial', '', 10)
-            for q_type, errors in errors_by_type.items():
-                pdf.cell(50, 8, self.sanitize(q_type.capitalize()), 1, 0, 'L')
-                pdf.cell(35, 8, str(errors['total']), 1, 0, 'C')
-                pdf.cell(50, 8, str(errors['retrieval_failures']), 1, 0, 'C')
-                pdf.cell(50, 8, str(errors['generation_failures']), 1, 1, 'C')
+                pdf.set_font('Arial', '', 10)
+                for q_type, stats in by_type.items():
+                    pdf.cell(50, 8, self.sanitize(q_type.capitalize()), 1, 0, 'L')
+                    pdf.cell(35, 8, str(stats.get('count', 0)), 1, 0, 'C')
+                    pdf.cell(50, 8, f"{stats.get('avg_mrr', 0):.4f}", 1, 0, 'C')
+                    pdf.cell(50, 8, f"{stats.get('avg_recall', 0):.4f}", 1, 1, 'C')
 
             # Performance Metrics
             pdf.add_page()
@@ -315,20 +360,20 @@ Errors were categorized as:
 
             perf_text = f"""
 Response Time Analysis:
-- Average Response Time: {self.results['avg_response_time']:.3f} seconds
+- Average Response Time: {avg_response_time:.3f} seconds
 - System demonstrates efficient query processing with consistent response times
 
 Additional Metrics:
-- Precision@K: {self.results['metrics']['precision_at_k']['precision_at_k']:.4f}
-- Recall@K: {self.results['metrics']['recall_at_k']['recall_at_k']:.4f}
-- ROUGE-1: {self.results['metrics']['rouge']['rouge1']:.4f}
-- ROUGE-L: {self.results['metrics']['rouge']['rougeL']:.4f}
-- Exact Match: {self.results['metrics']['exact_match']['exact_match']:.4f}
+- MRR (URL-level): {self._metric('mrr_url_level', 0.0):.4f}
+- Recall@5: {self._metric('recall_at_5', 0.0):.4f}
+- ROUGE-1: {self._metric('rouge1', 0.0):.4f}
+- ROUGE-L: {self._metric('rougeL', 0.0):.4f}
+- Exact Match: {self._metric('exact_match', 0.0):.4f}
 """
             pdf.chapter_body(perf_text.strip())
 
             # INNOVATIVE EVALUATION SECTION
-            if 'innovative_metrics' in self.results and self.results['innovative_metrics']:
+            if self.results.get('innovative_metrics') or self.results.get('innovative_evaluation'):
                 self._add_innovative_metrics_section(pdf)
 
             # Conclusions
@@ -381,7 +426,7 @@ innovation in RAG system evaluation:
 """
         pdf.chapter_body(intro.strip())
 
-        innovative = self.results['innovative_metrics']
+        innovative = self.results.get('innovative_metrics') or self.results.get('innovative_evaluation') or {}
 
         # 1. LLM-as-Judge
         if 'llm_as_judge' in innovative:
@@ -396,8 +441,8 @@ LLM-as-Judge uses a language model to evaluate answer quality across multiple di
 Methodology: Each answer is evaluated on factual accuracy, completeness, relevance, and coherence
 using LLM-generated assessments. This provides nuanced evaluation beyond simple metrics.
 
-Results (Sample size: {llm_judge.get('sample_size', 0)} questions):
-- Overall Score:      {llm_judge.get('avg_overall_score', 0):.4f}
+Results (Sample size: {llm_judge.get('sample_size', llm_judge.get('num_samples', 0))} questions):
+- Overall Score:      {llm_judge.get('avg_overall_score', llm_judge.get('overall_score', 0)):.4f}
 - Factual Accuracy:   {llm_judge.get('avg_factual_accuracy', 0):.4f}
 - Completeness:       {llm_judge.get('avg_completeness', 0):.4f}
 - Relevance:          {llm_judge.get('avg_relevance', 0):.4f}
@@ -438,7 +483,7 @@ a) Paraphrasing Robustness:
             # Unanswerable detection
             if 'unanswerable_detection' in adv:
                 unans = adv['unanswerable_detection']
-                hall_rate = unans.get('hallucination_rate', 0)
+                hall_rate = unans.get('hallucination_rate', unans.get('avg_hallucination_rate', 0))
                 unans_text = f"""
 b) Unanswerable Question Detection:
    Tests if system hallucinates answers to unanswerable questions.
@@ -488,8 +533,8 @@ Compares entities to detect hallucinated information.
 
 Results:
 - Average Hallucination Rate:  {hall.get('avg_hallucination_rate', 0)*100:.1f}%
-- Total Hallucinated Answers:  {hall.get('total_hallucinations', 0)}
-- Hallucination Percentage:    {hall.get('hallucination_percentage', 0):.1f}%
+- Total Hallucinated Answers:  {hall.get('total_hallucinations', hall.get('high_hallucination_count', 0))}
+- Hallucination Percentage:    {hall.get('hallucination_percentage', hall.get('avg_hallucination_rate', 0) * 100):.1f}%
 
 {hall.get('interpretation', '')}
 

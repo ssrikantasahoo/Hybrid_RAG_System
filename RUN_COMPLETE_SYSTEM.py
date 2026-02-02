@@ -11,7 +11,14 @@ This script will:
 6. Create PDF report
 7. Verify all required files exist
 
-Run with: python RUN_COMPLETE_SYSTEM.py
+Run with: python RUN_COMPLETE_SYSTEM.py [--force-rebuild] [--report-only]
+
+Options:
+  --force-rebuild    Delete existing data and regenerate random 300 URLs
+                     (REQUIRED for assignment compliance - random URLs must
+                     change every time system is rebuilt/indexed)
+  --report-only      Regenerate only outputs/evaluation_report.pdf from
+                     existing outputs/evaluation_results.json
 """
 
 import os
@@ -20,6 +27,7 @@ import json
 import logging
 from pathlib import Path
 import time
+import argparse
 
 # Add src to path so internal imports work
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))
@@ -101,31 +109,56 @@ def create_directories():
     logger.info("")
 
 def generate_fixed_urls():
-    """Generate data/fixed_urls.json with 200 Wikipedia URLs"""
+    """Generate data/fixed_urls.json with 200 Wikipedia URLs
+
+    IMPORTANT: The fixed 200 URLs must be unique across all groups per assignment requirement.
+    This function will NOT auto-generate URLs if the file doesn't exist.
+    """
     logger.info("=" * 70)
-    logger.info("STEP 3: Generating Fixed URLs (200 Wikipedia articles)")
+    logger.info("STEP 3: Verifying Fixed URLs (200 Wikipedia articles)")
     logger.info("=" * 70)
 
-    from src.data_collection import WikipediaDataCollector
+    # Check if fixed_urls.json exists
+    if not Path('data/fixed_urls.json').exists():
+        logger.error("[ERROR] data/fixed_urls.json is MISSING!")
+        logger.error("")
+        logger.error("CRITICAL: The assignment requires each group to have a UNIQUE set of 200 fixed URLs.")
+        logger.error("Auto-generation has been DISABLED to prevent duplicate URLs across groups.")
+        logger.error("")
+        logger.error("SOLUTION:")
+        logger.error("  1. Manually create data/fixed_urls.json with your group's unique 200 URLs")
+        logger.error("  2. Or uncomment the auto-generation code (see RUN_COMPLETE_SYSTEM.py line ~115)")
+        logger.error("  3. WARNING: Auto-generated URLs may duplicate other groups!")
+        logger.error("")
+        raise FileNotFoundError("data/fixed_urls.json is required but missing")
 
-    collector = WikipediaDataCollector(min_words=200)
+    # Load and verify fixed URLs
+    logger.info("[OK] data/fixed_urls.json exists")
+    with open('data/fixed_urls.json', 'r') as f:
+        urls = json.load(f)
 
-    # Check if fixed_urls.json already exists
-    if Path('data/fixed_urls.json').exists():
-        logger.info("[OK] data/fixed_urls.json already exists")
-        with open('data/fixed_urls.json', 'r') as f:
-            urls = json.load(f)
-        logger.info(f"[OK] Loaded {len(urls)} existing URLs\n")
-        return
+    if len(urls) != 200:
+        logger.error(f"[ERROR] Expected 200 fixed URLs, found {len(urls)}")
+        raise ValueError(f"Fixed URLs must be exactly 200, found {len(urls)}")
 
-    logger.info("Generating 200 unique Wikipedia URLs...")
-    fixed_urls = collector.create_fixed_urls_set(count=200, output_file='data/fixed_urls.json')
+    logger.info(f"[OK] Verified {len(urls)} fixed URLs")
+    logger.info(f"  Sample URLs: {[url for url in urls[:3]]}")
+    logger.info("[NOTE] These 200 URLs are LOCKED and will NOT change on rebuild\n")
 
-    logger.info(f"[OK] Generated data/fixed_urls.json with {len(fixed_urls)} URLs")
-    logger.info(f"  Sample URLs: {fixed_urls[:3]}\n")
+    ### UNCOMMENT BELOW TO AUTO-GENERATE (NOT RECOMMENDED) ###
+    # from src.data_collection import WikipediaDataCollector
+    # collector = WikipediaDataCollector(min_words=200)
+    # logger.info("Generating 200 unique Wikipedia URLs...")
+    # fixed_urls = collector.create_fixed_urls_set(count=200, output_file='data/fixed_urls.json')
+    # logger.info(f"[OK] Generated data/fixed_urls.json with {len(fixed_urls)} URLs")
+    ### END AUTO-GENERATE ###
 
-def collect_and_preprocess_data():
-    """Collect Wikipedia articles and preprocess"""
+def collect_and_preprocess_data(force_rebuild=False):
+    """Collect Wikipedia articles and preprocess
+
+    Args:
+        force_rebuild: If True, regenerate random URLs and rebuild indices
+    """
     logger.info("=" * 70)
     logger.info("STEP 4: Collecting & Preprocessing Wikipedia Data")
     logger.info("=" * 70)
@@ -133,13 +166,23 @@ def collect_and_preprocess_data():
     from src.data_collection import WikipediaDataCollector
     from src.preprocessing import TextChunker
 
-    # Check if processed chunks already exist
-    if Path('data/processed_chunks.json').exists():
+    # Check if processed chunks already exist (skip only if NOT force rebuild)
+    if not force_rebuild and Path('data/processed_chunks.json').exists():
         logger.info("[OK] data/processed_chunks.json already exists")
+        logger.info("[WARNING] Random 300 URLs are NOT being regenerated!")
+        logger.info("[WARNING] Use --force-rebuild flag to regenerate random URLs per assignment requirement")
         with open('data/processed_chunks.json', 'r', encoding='utf-8') as f:
             chunks = json.load(f)
         logger.info(f"[OK] Loaded {len(chunks)} existing chunks\n")
         return chunks
+
+    if force_rebuild:
+        logger.info("[FORCE REBUILD] Regenerating random 300 URLs per assignment requirement")
+        # Delete old data to ensure fresh random URLs
+        for old_file in ['data/processed_chunks.json', 'data/raw_corpus.json', 'data/random_urls.json']:
+            if Path(old_file).exists():
+                Path(old_file).unlink()
+                logger.info(f"[DELETED] {old_file}")
 
     # Load fixed URLs
     with open('data/fixed_urls.json', 'r') as f:
@@ -165,7 +208,18 @@ def collect_and_preprocess_data():
     # Get random articles
     logger.info("Collecting 300 random articles...")
     random_articles = collector.get_random_wikipedia_urls(count=300, exclude_urls=fixed_urls)
-    
+
+    # Save random URLs separately for verification
+    random_urls = [article['url'] for article in random_articles]
+    with open('data/random_urls.json', 'w', encoding='utf-8') as f:
+        json.dump({
+            'urls': random_urls,
+            'count': len(random_urls),
+            'generated_at': time.strftime('%Y-%m-%d %H:%M:%S'),
+            'note': 'These 300 URLs are randomly generated and MUST change on each rebuild'
+        }, f, indent=2)
+    logger.info(f"[OK] Saved data/random_urls.json with {len(random_urls)} URLs")
+
     # Add random articles
     for article in random_articles:
         articles.append(article)
@@ -453,13 +507,60 @@ def print_final_summary(results):
 
 def main():
     """Main execution function"""
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(
+        description='Run complete Hybrid RAG System',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python RUN_COMPLETE_SYSTEM.py                  # Use existing data if available
+  python RUN_COMPLETE_SYSTEM.py --force-rebuild  # Regenerate random 300 URLs (REQUIRED for assignment)
+  python RUN_COMPLETE_SYSTEM.py --report-only    # Generate PDF report only (fast)
+        """
+    )
+    parser.add_argument(
+        '--force-rebuild',
+        action='store_true',
+        help='Delete existing data and regenerate random 300 URLs (per assignment requirement)'
+    )
+    parser.add_argument(
+        '--report-only',
+        action='store_true',
+        help='Skip full pipeline and regenerate PDF report from outputs/evaluation_results.json'
+    )
+    args = parser.parse_args()
+
+    if args.force_rebuild and args.report_only:
+        parser.error("--force-rebuild and --report-only cannot be used together")
+
     start_time = time.time()
 
     logger.info("+" + "=" * 68 + "+")
     logger.info("|" + " " * 15 + "HYBRID RAG SYSTEM - COMPLETE EXECUTION" + " " * 15 + "|")
-    logger.info("+" + "=" * 68 + "+\n")
+    logger.info("+" + "=" * 68 + "+")
+    if args.force_rebuild:
+        logger.info("|" + " " * 18 + "MODE: FORCE REBUILD (Fresh Random URLs)" + " " * 9 + "|")
+        logger.info("+" + "=" * 68 + "+")
+    elif args.report_only:
+        logger.info("|" + " " * 22 + "MODE: REPORT ONLY (Fast PDF Regeneration)" + " " * 4 + "|")
+        logger.info("+" + "=" * 68 + "+")
+    logger.info("")
 
     try:
+        if args.report_only:
+            create_directories()
+
+            results_file = Path('outputs/evaluation_results.json')
+            if not results_file.exists():
+                raise FileNotFoundError(
+                    "outputs/evaluation_results.json not found. Run full pipeline once before --report-only."
+                )
+
+            generate_pdf_report()
+            pdf_exists = Path('outputs/evaluation_report.pdf').exists()
+            logger.info(f"[OK] Report-only mode complete. PDF exists: {pdf_exists}")
+            return pdf_exists
+
         # Step 1: Verify dependencies
         if not verify_dependencies():
             logger.error("Please install missing dependencies first!")
@@ -472,7 +573,7 @@ def main():
         generate_fixed_urls()
 
         # Step 4: Collect and preprocess data
-        chunks = collect_and_preprocess_data()
+        chunks = collect_and_preprocess_data(force_rebuild=args.force_rebuild)
 
         # Step 5: Build indices
         dense_retriever, sparse_retriever = build_indices(chunks)
