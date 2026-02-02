@@ -13198,3 +13198,14 @@ NEXT STEPS:
 2026-02-02 21:54:21,213 - INFO - ======================================================================
 2026-02-02 21:54:21,213 - INFO - 
 Total execution time: 1.11 hours
+2026-02-02 22:10:56,350 - INFO - Regenerating missing advanced visualizations: ['outputs/hallucination_analysis.png', 'outputs/adversarial_testing.png', 'outputs/comprehensive_dashboard.png']
+2026-02-02 22:10:59,203 - INFO - Creating all advanced visualizations...
+2026-02-02 22:10:59,203 - INFO - Creating LLM-as-Judge radar chart...
+2026-02-02 22:11:00,045 - INFO - Saved LLM-as-Judge radar chart to outputs\llm_judge_radar.png
+2026-02-02 22:11:00,046 - INFO - Creating calibration curve...
+2026-02-02 22:11:01,618 - INFO - Saved calibration curve to outputs\calibration_curve.png
+2026-02-02 22:11:01,619 - INFO - Creating hallucination analysis...
+2026-02-02 22:11:01,743 - WARNING - Could not regenerate advanced visualizations normally: Wedge sizes 'x' must be non negative values
+2026-02-02 22:11:02,046 - WARNING - [FALLBACK] Created placeholder outputs/hallucination_analysis.png
+2026-02-02 22:11:02,222 - WARNING - [FALLBACK] Created placeholder outputs/adversarial_testing.png
+2026-02-02 22:11:02,381 - WARNING - [FALLBACK] Created placeholder outputs/comprehensive_dashboard.png

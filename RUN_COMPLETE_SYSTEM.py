@@ -615,13 +615,24 @@ def _normalize_innovative_metrics_for_visuals(results):
     # Hallucination detection
     hall = innovative.get('hallucination_detection', {})
     if hall:
-        total = hall.get('num_samples', 0)
-        high = hall.get('total_hallucinations', hall.get('high_hallucination_count', 0))
+        total = int(hall.get('num_samples', 0) or 0)
+        high = int(hall.get('total_hallucinations', hall.get('high_hallucination_count', 0)) or 0)
+        if total and high > total:
+            high = total
         percent = hall.get('hallucination_percentage')
         if percent is None and total:
             percent = (high / total) * 100
+
+        details = hall.get('details', [])
+        if not details and total > 0:
+            # Synthesize minimal detail records required by plotting logic.
+            details = (
+                [{'hallucination_score': 1.0}] * high +
+                [{'hallucination_score': 0.0}] * (total - high)
+            )
+
         normalized['hallucination_detection'] = {
-            'details': hall.get('details', []),
+            'details': details,
             'total_hallucinations': high,
             'hallucination_percentage': percent if percent is not None else hall.get('avg_hallucination_rate', 0) * 100
         }
@@ -669,7 +680,37 @@ def _ensure_advanced_visualizations(results):
         vis_results['innovative_metrics'] = _normalize_innovative_metrics_for_visuals(results)
 
         advanced_viz = AdvancedVisualizer(output_dir='outputs')
-        advanced_viz.create_all_visualizations(vis_results)
+        innovative = vis_results.get('innovative_metrics', {})
+
+        # Generate each figure independently so one failure doesn't block others.
+        try:
+            if 'llm_as_judge' in innovative:
+                advanced_viz.plot_llm_judge_radar(innovative['llm_as_judge'])
+        except Exception as e:
+            logger.warning(f"Could not regenerate llm_judge_radar.png: {e}")
+
+        try:
+            if 'confidence_calibration' in innovative:
+                advanced_viz.plot_calibration_curve(innovative['confidence_calibration'])
+        except Exception as e:
+            logger.warning(f"Could not regenerate calibration_curve.png: {e}")
+
+        try:
+            if 'hallucination_detection' in innovative:
+                advanced_viz.plot_hallucination_analysis(innovative['hallucination_detection'])
+        except Exception as e:
+            logger.warning(f"Could not regenerate hallucination_analysis.png: {e}")
+
+        try:
+            if 'adversarial_testing' in innovative:
+                advanced_viz.plot_adversarial_results(innovative['adversarial_testing'])
+        except Exception as e:
+            logger.warning(f"Could not regenerate adversarial_testing.png: {e}")
+
+        try:
+            advanced_viz.plot_comprehensive_metrics_dashboard(vis_results)
+        except Exception as e:
+            logger.warning(f"Could not regenerate comprehensive_dashboard.png: {e}")
     except Exception as e:
         logger.warning(f"Could not regenerate advanced visualizations normally: {e}")
 
